@@ -1,0 +1,43 @@
+{
+  "name": "hilfling-gui",
+  "version": "1.0.0",
+  "description": "Custom react gui library used for Fotogjengen's webpages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fotogjengen/hilfling-gui.git"
+  },
+  "keywords": [
+    "fotogjengen"
+  ],
+  "author": {
+    "name": "Pernille Andresen Klevstuen",
+    "email": "peklevstuen@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Sindre Sivertsen",
+      "email": "sindrejohan1@gmail.com"
+    },
+    {
+      "name": "Caroline Sandsbråten"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fotogjengen/hilfling-gui/issues"
+  },
+  "homepage": "https://github.com/Fotogjengen/hilfling-gui#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "typescript": "^3.6.3"
+  }
+}
