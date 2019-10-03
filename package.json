@@ -4,7 +4,9 @@
   "description": "Custom react gui library used for Fotogjengen's webpages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -31,13 +33,18 @@
     "url": "https://github.com/Fotogjengen/hilfling-gui/issues"
   },
   "homepage": "https://github.com/Fotogjengen/hilfling-gui#readme",
-  "dependencies": {},
+  "dependencies": {
+    "path": "^0.12.7"
+  },
   "devDependencies": {
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.6.0",
-    "typescript": "^3.6.3"
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }

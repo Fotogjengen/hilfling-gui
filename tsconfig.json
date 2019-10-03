@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noEmit": true, //prevents TypeScript from writing its own JavaScript files
+    "target": "esnext", //target latest version of ECMAScript
+    "allowJs": true, //process and infer types from .js files
+    "strict": true, //enable strictest settings like strictNullChecks and noImplicitAny
+    "isolatedModules": true, //disallow features that require cross-file information for emit
+    "esModuleInterop": true, //Import non-ES modules as default imports
+    "jsx": "react",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true
+  },
+  "include": ["src"]
+}
