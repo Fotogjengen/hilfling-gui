@@ -28,7 +28,11 @@ export const Button: FC<Props> = ({
     warning,
     disabled
   });
-  return <button className={buttonClass}>{label}</button>;
+  return (
+    <button className={buttonClass} {...rest}>
+      {label}
+    </button>
+  );
 };
 
 export default Button;
