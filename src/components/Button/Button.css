@@ -5,12 +5,27 @@
   height: 40px;
   min-width: 125px;
   border-radius: 5px;
-  border-color: linear-gradient(-180deg, #dae0e5, #d0d9e0 90%);
   border-width: 1.3px;
   font-size: 16px;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
+  margin: 20px 20px;
   font-weight: 600;
+}
+
+.normal {
   background-image: linear-gradient(-180deg, #e8eef2, #dae0e5 90%);
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
-  margin: 20px 20px;
+}
+
+.disabled {
+  color: #888;
+  background-image: linear-gradient(-180deg, #e8eef2, #dae0e5 90%);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
+}
+
+.warning {
+  background-image: linear-gradient(-180deg, #d02329, #c92127);
+  border-color: #ae1d22;
+  box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.1);
+  color: var(--color-white);
 }
