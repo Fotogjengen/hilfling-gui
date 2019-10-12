@@ -8,7 +8,7 @@ interface Props {
   /** Primary button styling */
   primary?: boolean;
   /** Danger button styling (red button) */
-  danger?: boolean;
+  warning?: boolean;
   /** Not clickable button */
   disabled?: boolean;
   /** Is it a submit button? */
@@ -18,34 +18,17 @@ interface Props {
 export const Button: FC<Props> = ({
   label,
   primary,
-  danger,
+  warning,
   disabled,
   submit,
   ...rest
-}: Props) => (
-  <button
-    className={`Button ${
-      danger ? `warning` : disabled ? `disabled` : `normal`
-    }`}
-  >
-    {label}
-  </button>
-);
+}: Props) => {
+  let buttonClass = cx({
+    Button,
+    warning,
+    disabled
+  });
+  return <button className={buttonClass}>{label}</button>;
+};
 
 export default Button;
-
-// return (
-//     <button
-//       className={
-//         flat
-//           ? cx(styles.flatButton, className)
-//           : cx(styles.button, styles[size], dark && styles.dark, className)
-//       }
-//       type={submit ? 'submit' : 'button'}
-//       {...rest}
-//     >
-//       <LoadingIndicator small margin={0} loading={pending} />
-//       {pending && <span className={styles.loading}>Laster</span>}
-//       {!pending && children}
-//     </button>
-//   );
