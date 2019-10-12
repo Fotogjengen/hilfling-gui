@@ -1,7 +1,5 @@
 # hilfling-gui
 
-# hilfling-gui
-
 This project is Fotogjenens own custom gui library. It is exported as an NPM library, and can be downloaded and used in other frontend projects.
 
 This project uses React Typescript to write components and Storybook as component documentation.
