@@ -1,13 +1,12 @@
-import React, { FC } from 'react';
-import styles from './CardTitle.css';
+import React, { FC } from "react";
 
 interface Props {
-  // Title
-  title: string;
+	// Title
+	title: string;
 }
 
 export const CardTitle: FC<Props> = ({ title, ...rest }: Props) => (
-  <h2 className={styles.test}>{title}</h2>
+	<h2>{title}</h2>
 );
 
 export default CardTitle;
