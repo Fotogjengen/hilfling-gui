@@ -9,7 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "moduleResolution": "node",
-    "outDir": "./lib"
+    "outDir": "./grp"
   },
   "include": ["src", "index.js"],
   "exclude": ["**/*/*.stories.*"]

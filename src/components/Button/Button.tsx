@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import cx from "classnames";
-import styles from "./Button.css";
+import styles from "./Button.module.css";
 
 interface Props {
   /** Button label */
