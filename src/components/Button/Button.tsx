@@ -9,6 +9,8 @@ interface Props {
   primary?: boolean;
   /** Danger button styling (red button) */
   warning?: boolean;
+  /** Called when a button is clicked */
+  onClick?: () => void;
   /** Not clickable button */
   disabled?: boolean;
   /** Is it a submit button? */
@@ -19,13 +21,25 @@ export const Button: FC<Props> = ({
   label,
   primary,
   warning,
+  onClick,
   disabled,
   submit,
   ...rest
 }: Props) => {
-  const buttonClass = cx(styles.Button, styles.warning, styles.disabled);
+  const buttonClass = cx(
+    styles.Button,
+    { [styles.primary]: primary },
+    { [styles.warning]: warning },
+    {
+      [styles.disabled]: disabled && !onClick,
+    },
+  );
+  const handleClick = () => {
+    if (!onClick) return;
+    onClick();
+  };
   return (
-    <button className={buttonClass} {...rest}>
+    <button className={buttonClass} onClick={handleClick} {...rest}>
       {label}
     </button>
   );
