@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import CheckboxSvg from "../icons/Checkbox";
+import styles from "./Checkbox.css";
 
 interface Props {
   /** True if checkbox is checked */
@@ -9,13 +10,13 @@ interface Props {
 }
 
 const Checkbox: FC<Props> = ({ checked = false, notChangable }: Props) => {
-  const [checkedBox, setCheckedBox] = useState(checked);
+  const [checkedBox, setCheckedBox] = useState<boolean>(checked);
   const handleClick = () => {
     if (notChangable) return;
     setCheckedBox(!checkedBox);
   };
   return (
-    <div onClick={handleClick}>
+    <div onClick={handleClick} className={styles.checkbox}>
       <CheckboxSvg checked={checkedBox} />
     </div>
   );
