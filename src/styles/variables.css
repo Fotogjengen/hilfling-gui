@@ -29,11 +29,23 @@
   --color-red-4: #bb3439;
   --color-red-5: #c2484d;
 
-  --color-light-gray-1: #ced6da;
-  --color-light-gray-2: #d0d9e0;
+  --color-light-gray-1: #f2f5f7;
+  --color-light-gray-2: #e8eef2;
   --color-light-gray-3: #dae0e5;
-  --color-light-gray-4: #e8eef2;
-  --color-light-gray-5: #f2f5f7;
+  --color-light-gray-4: #d0d9e0;
+  --color-light-gray-5: #ced6da;
+
+  --color-gray-1: #aaa;
+  --color-gray-2: #bbb;
+  --color-gray-3: #ccc;
+  --color-gray-4: #ddd;
+  --color-gray-5: #eee;
+
+  --color-dark-gray-1: #555;
+  --color-dark-gray-2: #666;
+  --color-dark-gray-3: #777;
+  --color-dark-gray-4: #888;
+  --color-dark-gray-5: #999;
 
   --color-black: #000;
   --color-white: #fff;
