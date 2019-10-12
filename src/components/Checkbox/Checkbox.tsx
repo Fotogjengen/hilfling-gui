@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import CheckboxSvg from "../icons/Checkbox";
-import CheckedCheckboxSvg from "../icons/CheckedCheckbox";
+import React, { FC } from 'react';
+import CheckboxSvg from '../icons/Checkbox';
+import CheckedCheckboxSvg from '../icons/CheckedCheckbox';
 
 interface Props {
   /** True if checkbox is checked */

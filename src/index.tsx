@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./styles/globals.css";
-import "./styles/utilities.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './styles/globals.css';
+import './styles/utilities.css';
 
 const App: React.FC<{}> = () => {
   return (
@@ -17,10 +17,10 @@ const App: React.FC<{}> = () => {
       </ol>
       <p>
         Det var det og værre var det ikke! Om litt havner også dette bibeloteket
-        på npm, så da blir det superlett å bruke!{" "}
+        på npm, så da blir det superlett å bruke!{' '}
       </p>
     </div>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById('app'));

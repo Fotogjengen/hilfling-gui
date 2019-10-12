@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
 const CheckboxSvg: FC<{}> = () => (
   <svg
@@ -10,8 +10,8 @@ const CheckboxSvg: FC<{}> = () => (
   >
     <path
       opacity="0.54"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M16 2V16H2V2H16ZM16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0Z"
       fill="#010101"
     />

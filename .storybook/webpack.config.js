@@ -1,6 +1,9 @@
 const path = require("path");
 
 module.exports = ({ config }) => {
+  config.module.rules = config.module.rules.filter(
+    rule => rule.test.toString() !== "/\\.css$/"
+  );
   config.module.rules.push(
     {
       test: /\.(ts|tsx)$/,
@@ -17,8 +20,16 @@ module.exports = ({ config }) => {
       test: /\.scss$/,
       use: ["style-loader", "css-loader", "sass-loader"],
       include: path.resolve(__dirname, "../")
+    },
+    {
+      test: /\.css$/,
+      use: [
+        { loader: "style-loader" },
+        { loader: "css-loader", options: { modules: true } }
+      ],
+      include: path.resolve(__dirname, "../")
     }
   );
-  config.resolve.extensions.push(".ts", ".tsx");
+  config.resolve.extensions.push(".ts", ".tsx", ".scss", ".css");
   return config;
 };
