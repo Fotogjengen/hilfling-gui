@@ -5,9 +5,7 @@ import Button from "./Button";
 
 storiesOf("Button", module)
   .addDecorator(withInfo({ inline: true }))
-  .add("Normal", () => (
-    <Button label={"Last opp"} primary={true} onClick={() => alert("test")} />
-  ))
+  .add("Normal", () => <Button label={"Last opp"} primary={true} />)
   .add("Disabled", () => <Button label={"Last opp"} disabled={true} />)
   .add("Warning", () => (
     <Button label={"Avbryt"} warning={true} onClick={() => alert("test")} />
