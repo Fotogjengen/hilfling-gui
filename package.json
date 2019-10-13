@@ -1,6 +1,6 @@
 {
   "name": "hilfling-gui",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "Custom react gui library used for Fotogjengen's webpages",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,10 @@
     "build": "webpack",
     "storybook": "start-storybook -p 9001",
     "lint": "eslint --ext js --ext jsx --ext ts --ext tsx src",
-    "lint:fix": "eslint --fix --ext js --ext jsx --ext ts --ext tsx src"
+    "lint:fix": "eslint --fix --ext js --ext jsx --ext ts --ext tsx src",
+    "remove-old": "rm -rf ./lib && rm -rf ./grp",
+    "babel": "babel grp -d lib --copy-files && rm -rf ./grp",
+    "prepare": "npm run remove-old && npm run tsc && ./copy-css-files.bash && npm run babel"
   },
   "repository": {
     "type": "git",
@@ -55,8 +58,6 @@
     "@babel/preset-typescript": "^7.6.0",
     "@storybook/addon-info": "^5.2.1",
     "@storybook/react": "^5.2.1",
-    "@types/storybook__addon-info": "^4.1.2",
-    "@types/storybook__react": "^4.0.2",
     "@typescript-eslint/eslint-plugin": "^2.3.3",
     "@typescript-eslint/parser": "^2.3.3",
     "babel-loader": "^8.0.6",

@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import RadioButtonSvg from "../icons/RadioButton";
-import styles from "./RadioButton.css";
+import styles from "./RadioButton.module.css";
 
 interface Props {
   /** True if radiobutton is checked */
