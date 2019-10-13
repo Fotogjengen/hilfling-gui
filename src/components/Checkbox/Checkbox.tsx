@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import CheckboxSvg from "../icons/Checkbox";
-import styles from "./Checkbox.css";
+import styles from "./Checkbox.module.css";
 
 interface Props {
   /** True if checkbox is checked */
