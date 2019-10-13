@@ -22,7 +22,7 @@ export const Button: FC<Props> = ({
   primary,
   warning,
   onClick,
-  disabled,
+  disabled = false,
   submit,
   ...rest
 }: Props) => {
@@ -39,7 +39,12 @@ export const Button: FC<Props> = ({
     onClick();
   };
   return (
-    <button className={buttonClass} onClick={handleClick} {...rest}>
+    <button
+      className={buttonClass}
+      onClick={handleClick}
+      disabled={disabled}
+      {...rest}
+    >
       {label}
     </button>
   );

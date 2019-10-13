@@ -8,18 +8,39 @@
   border-width: 1.3px;
   font-size: 16px;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
-  margin: 20px 20px;
   font-weight: 600;
 }
 
+.Button:focus {
+  outline: none;
+}
+
+.Button:active {
+  box-shadow: none;
+  transform: scale(0.99);
+}
+
 .primary {
-  background-image: linear-gradient(-180deg, #e8eef2, #dae0e5 90%);
+  background-image: linear-gradient(
+    -180deg,
+    var(--color-light-gray-2),
+    var(--color-light-gray-3) 90%
+  );
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
+}
+
+.primary:active {
+  border-top: 1.3px solid var(--color-gray-2);
+  border-left: 1.3px solid var(--color-gray-2);
 }
 
 .disabled {
   color: #888;
-  background-image: linear-gradient(-180deg, #e8eef2, #dae0e5 90%);
+  background-image: linear-gradient(
+    -180deg,
+    var(--color-light-gray-2),
+    var(--color-light-gray-3) 90%
+  );
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
 }
 
