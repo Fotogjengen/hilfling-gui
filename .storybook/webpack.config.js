@@ -23,6 +23,13 @@ module.exports = ({ config }) => {
     },
     {
       test: /\.css$/,
+      exclude: /\.module\.css$/,
+      user: ["style-loader", "css-loader"],
+      include: path.resolve(__dirname, "../")
+    },
+    {
+
+      test: /\.module\.css$/,
       use: [
         { loader: "style-loader" },
         { loader: "css-loader", options: { modules: true } }
