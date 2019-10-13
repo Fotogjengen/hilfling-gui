@@ -5,5 +5,9 @@ import Checkbox from "./Checkbox";
 
 storiesOf("Checkbox", module)
   .addDecorator(withInfo({ inline: true }))
-  .add("Unchecked", () => <Checkbox></Checkbox>)
-  .add("Checked", () => <Checkbox checked={true}></Checkbox>);
+  .add("Unchecked", () => <Checkbox />)
+  .add("Checked", () => <Checkbox checked={true} />)
+  .add("Unchecked not changable", () => <Checkbox notChangable={true} />)
+  .add("Checked not changable", () => (
+    <Checkbox checked={true} notChangable={true} />
+  ));

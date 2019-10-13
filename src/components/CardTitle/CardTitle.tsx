@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 interface Props {
-  // Title
+  /** Title */
   title: string;
 }
 
