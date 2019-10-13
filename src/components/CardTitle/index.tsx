@@ -14,7 +14,9 @@ export const CardTitle: FC<Props> = ({
   capitalized,
   ...rest
 }: Props) => (
-  <h2 className={cx({ [styles.capitalized]: capitalized })}>{title}</h2>
+  <h2 className={cx(styles.cardtitle, { [styles.capitalized]: capitalized })}>
+    {title}
+  </h2>
 );
 
 export default CardTitle;

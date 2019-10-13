@@ -3,38 +3,51 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import EventCard from "./EventCard";
 import CardTitle from "../CardTitle/CardTitle";
+import EventCardDescription from "../EventCardDescription/EventCardDescription";
 
 storiesOf("Event Card", module)
   .addDecorator(withInfo({ inline: true }))
   .add("Samfundet", () => (
     <EventCard type={"samfundet"}>
-      <CardTitle title={"Dette er en overskrift"} />
-      Dette er vanlig tekst som står her.
+      <CardTitle title={"Temafest: Halloween"} capitalized={true} />
+      <EventCardDescription
+        images={123}
+        date={"12.10.2019"}
+        location={"Daglighallen"}
+        color={"red"}
+      />
     </EventCard>
   ))
   .add("UKA", () => (
     <EventCard type={"uka"}>
-      <CardTitle title={"Dette er en overskrift"} capitalized={true} />
-      Dette er vanlig tekst som står her. Dette er vanlig tekst som står
-      her.Dette er vanlig tekst som står her.Dette er vanlig tekst som står
-      her.Dette er vanlig tekst som står her.Dette er vanlig tekst som står
-      her.Dette er vanlig tekst som står her.Dette er vanlig tekst som står
-      her.Dette er vanlig tekst som står her.Dette er vanlig tekst som står
-      her.Dette er vanlig tekst som står her.Dette er vanlig tekst som står
-      her.Dette er vanlig tekst som står her.Dette er vanlig tekst som står
-      her.Dette er vanlig tekst som står her.Dette er vanlig tekst som står
-      her.Dette er vanlig tekst som står her.Dette er vanlig tekst som står her.
+      <CardTitle title={"Temafest: Halloween"} capitalized={true} />
+      <EventCardDescription
+        images={123}
+        date={"12.10.2019"}
+        location={"Daglighallen"}
+        color={"yellow"}
+      />
     </EventCard>
   ))
   .add("Isfit", () => (
     <EventCard type={"isfit"}>
-      <CardTitle title={"Dette er en overskrift"} />
-      Dette er vanlig tekst som står her.
+      <CardTitle title={"Temafest: Halloween"} capitalized={true} />
+      <EventCardDescription
+        images={123}
+        date={"12.10.2019"}
+        location={"Daglighallen"}
+        color={"blue"}
+      />
     </EventCard>
   ))
   .add("Annet", () => (
     <EventCard type={"annet"}>
-      <CardTitle title={"Dette er en overskrift"} />
-      Dette er vanlig tekst som står her.
+      <CardTitle title={"Temafest: Halloween"} capitalized={true} />
+      <EventCardDescription
+        images={123}
+        date={"12.10.2019"}
+        location={"Daglighallen"}
+        color={"orange"}
+      />
     </EventCard>
   ));
