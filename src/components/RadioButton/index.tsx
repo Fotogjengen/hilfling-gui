@@ -6,13 +6,13 @@ interface Props {
   /** True if radiobutton is checked */
   checked?: boolean;
   /** True if not able to change component state */
-  notChangable?: boolean;
+  notChangeable?: boolean;
 }
 
-const RadioButton: FC<Props> = ({ checked = false, notChangable }: Props) => {
+const RadioButton: FC<Props> = ({ checked = false, notChangeable }: Props) => {
   const [checkedRadio, setCheckedRadio] = useState<boolean>(checked);
   const handleClick = () => {
-    if (notChangable) return;
+    if (notChangeable) return;
     setCheckedRadio(!checkedRadio);
   };
   return (

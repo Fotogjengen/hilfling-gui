@@ -16,8 +16,8 @@ const RadioButtonSvg: FC<Props> = ({ checked }: Props) => {
     >
       <g filter="url(#filter0_i)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M11 6.41667C8.43333 6.41667 6.41667 8.43333 6.41667 11C6.41667 13.5667 8.43333 15.5833 11 15.5833C13.5667 15.5833 15.5833 13.5667 15.5833 11C15.5833 8.43333 13.5667 6.41667 11 6.41667V6.41667ZM11.0002 1.8335C5.9585 1.8335 1.8335 5.9585 1.8335 11.0002C1.8335 16.0418 5.9585 20.1668 11.0002 20.1668C16.0418 20.1668 20.1668 16.0418 20.1668 11.0002C20.1668 5.9585 16.0418 1.8335 11.0002 1.8335V1.8335ZM11 18.3333C6.96667 18.3333 3.66667 15.0333 3.66667 11C3.66667 6.96667 6.96667 3.66667 11 3.66667C15.0333 3.66667 18.3333 6.96667 18.3333 11C18.3333 15.0333 15.0333 18.3333 11 18.3333V18.3333Z"
           fill="#B42025"
         />
@@ -30,9 +30,9 @@ const RadioButtonSvg: FC<Props> = ({ checked }: Props) => {
           width="18.3333"
           height="22.3333"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -67,8 +67,8 @@ const RadioButtonSvg: FC<Props> = ({ checked }: Props) => {
       <g filter="url(#filter0_i)">
         <path
           opacity="0.54"
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M11.0002 1.8335C5.9585 1.8335 1.8335 5.9585 1.8335 11.0002C1.8335 16.0418 5.9585 20.1668 11.0002 20.1668C16.0418 20.1668 20.1668 16.0418 20.1668 11.0002C20.1668 5.9585 16.0418 1.8335 11.0002 1.8335V1.8335ZM10.9998 18.3333C6.9665 18.3333 3.6665 15.0333 3.6665 11C3.6665 6.96667 6.9665 3.66667 10.9998 3.66667C15.0332 3.66667 18.3332 6.96667 18.3332 11C18.3332 15.0333 15.0332 18.3333 10.9998 18.3333V18.3333Z"
           fill="#010101"
         />
@@ -81,9 +81,9 @@ const RadioButtonSvg: FC<Props> = ({ checked }: Props) => {
           width="18.3333"
           height="22.3333"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"

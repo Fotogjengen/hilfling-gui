@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import Button from "./Button";
+import Button from ".";
 
 storiesOf("Button", module)
   .addDecorator(withInfo({ inline: true }))
