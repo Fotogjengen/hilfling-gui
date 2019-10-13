@@ -4,4 +4,4 @@ import "./styles/utilities.css";
 export { Button } from "./components/Button";
 export { Checkbox } from "./components/Checkbox";
 export { CardTitle } from "./components/CardTitle";
-export { CheckboxSvg, CheckedCheckboxSvg } from "./components/icons";
+export { CheckboxSvg } from "./components/icons";
