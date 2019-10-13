@@ -11,7 +11,9 @@
     "storybook": "start-storybook -p 9001",
     "lint": "eslint --ext js --ext jsx --ext ts --ext tsx src",
     "lint:fix": "eslint --fix --ext js --ext jsx --ext ts --ext tsx src",
-    "prepare": "rm -rf ./lib && rm -rf ./grp && tsc && ./copy-css-files.bash && babel grp -d lib --copy-files"
+    "remove-old": "rm -rf ./lib && rm -rf ./grp",
+    "babel": "babel grp -d lib --copy-files && rm -rf ./grp",
+    "prepare": "npm run remove-old && npm run tsc && ./copy-css-files.bash && npm run babel"
   },
   "repository": {
     "type": "git",
