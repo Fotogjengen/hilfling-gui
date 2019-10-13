@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./Input.css";
+import styles from "./Input.module.css";
 
 interface Props {
   /** The input's name, to identify the input in the data submitted with the form's data */
