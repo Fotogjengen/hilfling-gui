@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.name {
+  padding: 0;
+  margin: auto .5rem;
+}
+
+.icon {
+  text-align: center;
+  margin: auto 0;
+}
+

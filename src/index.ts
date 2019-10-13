@@ -11,3 +11,4 @@ export { Image, ProfileImage } from "./components/Image";
 export { default as Input } from "./components/Input";
 export { default as RadioButton } from "./components/RadioButton";
 export { default as PhotographerTag } from "./components/PhotographerTag";
+export { default as Logo } from "./components/Logo";

@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import CheckboxSvg from "../icons/Checkbox";
+import { CheckboxSvg } from "../icons";
 import styles from "./Checkbox.module.css";
 
 interface Props {
