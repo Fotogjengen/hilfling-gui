@@ -4,6 +4,10 @@ This project is Fotogjenens own custom gui library. It is exported as an NPM lib
 
 This project uses React Typescript to write components and Storybook as component documentation.
 
+## Important file extenstion naming
+* css modules MUST be named `<component-name>.module.css`
+* The projects src/ folder CANNOT contain ANY .js files 
+
 ## Local setup
 1. Clone reposetory
 2. `npm install`
