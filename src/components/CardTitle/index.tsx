@@ -7,14 +7,23 @@ interface Props {
   title: string;
   /** If title should be capitalized */
   capitalized?: boolean;
+  /** If title should be centerned */
+  centered?: boolean;
 }
 
 export const CardTitle: FC<Props> = ({
   title,
   capitalized,
+  centered,
   ...rest
 }: Props) => (
-  <h2 className={cx(styles.cardtitle, { [styles.capitalized]: capitalized })}>
+  <h2
+    className={cx(
+      styles.cardtitle,
+      { [styles.capitalized]: capitalized },
+      { [styles.centered]: centered },
+    )}
+  >
     {title}
   </h2>
 );

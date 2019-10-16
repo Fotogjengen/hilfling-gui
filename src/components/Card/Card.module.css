@@ -25,3 +25,7 @@
 .annet {
   border-right: var(--hilfling-annet-orange) 8px solid;
 }
+
+.rounded {
+  border-radius: 7px;
+}
