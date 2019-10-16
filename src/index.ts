@@ -1,5 +1,4 @@
 import "./styles/globals.css";
-import "./styles/utilities.module.css";
 
 export { default as Button } from "./components/Button";
 export { default as Card } from "./components/Card";
