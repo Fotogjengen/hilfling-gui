@@ -1,9 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import Card from "./Card";
-import CardTitle from "../CardTitle/CardTitle";
-import CardPreamble from "../CardPreamble/CardPreamble";
+import Card from "./index";
+import CardTitle from "../CardTitle/index";
+import CardPreamble from "../CardPreamble/index";
 
 storiesOf("Card", module)
   .addDecorator(withInfo({ inline: true }))

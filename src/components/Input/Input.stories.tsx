@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import Input from "./Input";
+import Input from "./index";
 
 storiesOf("Input", module)
   .addDecorator(withInfo({ inline: true }))

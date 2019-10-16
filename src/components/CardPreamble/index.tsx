@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import DotDivider, { ColorType } from "../DotDivider/DotDivider";
+import DotDivider, { ColorType } from "../DotDivider/index";
 import cx from "classnames";
 import styles from "./CardPreamble.module.css";
 

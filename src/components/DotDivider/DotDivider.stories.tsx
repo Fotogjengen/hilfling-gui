@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import DotDivider from "./DotDivider";
+import DotDivider from "./index";
 
 storiesOf("Dot divider", module)
   .addDecorator(withInfo({ inline: true }))
