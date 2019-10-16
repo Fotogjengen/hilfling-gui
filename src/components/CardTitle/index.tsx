@@ -16,16 +16,13 @@ export const CardTitle: FC<Props> = ({
   capitalized,
   centered,
   ...rest
-}: Props) => (
-  <h2
-    className={cx(
-      styles.cardtitle,
-      { [styles.capitalized]: capitalized },
-      { [styles.centered]: centered },
-    )}
-  >
-    {title}
-  </h2>
-);
+}: Props) => {
+  const classname = cx(
+    styles.cardtitle,
+    { [styles.capitalized]: capitalized },
+    { [styles.centered]: centered },
+  );
+  return <h2 className={classname}>{title}</h2>;
+};
 
 export default CardTitle;
