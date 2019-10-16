@@ -11,7 +11,7 @@ interface Props {
   centered?: boolean;
 }
 
-export const CardTitle: FC<Props> = ({
+const CardTitle: FC<Props> = ({
   title,
   capitalized,
   centered,
@@ -22,7 +22,11 @@ export const CardTitle: FC<Props> = ({
     { [styles.capitalized]: capitalized },
     { [styles.centered]: centered },
   );
-  return <h2 className={classname} {...rest}>{title}</h2>;
+  return (
+    <h2 className={classname} {...rest}>
+      {title}
+    </h2>
+  );
 };
 
 export default CardTitle;
