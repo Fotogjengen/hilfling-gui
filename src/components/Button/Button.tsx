@@ -3,8 +3,8 @@ import cx from "classnames";
 import styles from "./Button.module.css";
 
 interface Props {
-  /** Button label */
-  label: string;
+  /** Content inside */
+  children?: any;
   /** Primary button styling */
   primary?: boolean;
   /** Danger button styling (red button) */
@@ -18,7 +18,7 @@ interface Props {
 }
 
 export const Button: FC<Props> = ({
-  label,
+  children,
   primary,
   warning,
   onClick,
@@ -45,7 +45,7 @@ export const Button: FC<Props> = ({
       disabled={disabled}
       {...rest}
     >
-      {label}
+      {children}
     </button>
   );
 };

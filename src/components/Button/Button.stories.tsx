@@ -5,8 +5,10 @@ import Button from "./Button";
 
 storiesOf("Button", module)
   .addDecorator(withInfo({ inline: true }))
-  .add("Normal", () => <Button label={"Last opp"} primary={true} />)
-  .add("Disabled", () => <Button label={"Last opp"} disabled={true} />)
+  .add("Normal", () => <Button primary={true}>Last opp</Button>)
+  .add("Disabled", () => <Button disabled={true}>Last opp</Button>)
   .add("Warning", () => (
-    <Button label={"Avbryt"} warning={true} onClick={() => alert("test")} />
+    <Button warning={true} onClick={() => alert("test")}>
+      Avbryt
+    </Button>
   ));
