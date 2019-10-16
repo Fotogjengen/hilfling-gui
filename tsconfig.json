@@ -11,6 +11,6 @@
     "moduleResolution": "node",
     "outDir": "./grp"
   },
-  "include": ["src", "index.js"],
+  "include": ["src"],
   "exclude": ["**/*/*.stories.*"]
 }

@@ -1,5 +1,5 @@
 import "./styles/globals.css";
-import "./styles/utilities.css";
+import "./styles/utilities.module.css";
 
 export { default as Button } from "./components/Button";
 export { default as Checkbox } from "./components/Checkbox";

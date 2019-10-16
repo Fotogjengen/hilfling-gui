@@ -2,7 +2,7 @@ const path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.ts",
+  entry: "./index.tsx",
   module: {
     rules: [
       {
@@ -11,31 +11,31 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"]
-          }
-        }
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
       {
         test: /\.(scss|css)$/,
         use: [
           { loader: "style-loader" },
-          { loader: "css-loader", options: {modules: true} },
-          { loader: "sass-loader" }
-        ]
+          { loader: "css-loader", options: { modules: true } },
+          { loader: "sass-loader" },
+        ],
       },
       {
         test: /\.(tsx|ts)?$/,
         use: "ts-loader",
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js", "jsx"]
+    extensions: [".tsx", ".ts", ".js", "jsx"],
   },
   plugins: [new HtmlWebpackPlugin({ template: "./index.html" })],
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "dist")
-  }
+    path: path.resolve(__dirname, "dist"),
+  },
 };
