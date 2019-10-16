@@ -22,7 +22,7 @@ export const CardTitle: FC<Props> = ({
     { [styles.capitalized]: capitalized },
     { [styles.centered]: centered },
   );
-  return <h2 className={classname}>{title}</h2>;
+  return <h2 className={classname} {...rest}>{title}</h2>;
 };
 
 export default CardTitle;
