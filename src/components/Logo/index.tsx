@@ -7,15 +7,15 @@ interface Props {
   onClick?(event: SyntheticEvent): void;
 }
 
-const Logo: FC<Props> = ({ size, onClick }: Props) => {
+const Logo: FC<Props> = ({ size, ...rest }: Props) => {
   return (
-    <div style={{ height: size }} className={styles.logo} onClick={onClick}>
+    <div style={{ height: size }} className={styles.logo} {...rest}>
       <div className={styles.icon}>
         <LogoSvg size={size} />
       </div>
-      <h4 style={{ fontSize: size / 2 }} className={styles.name}>
+      <p style={{ fontSize: size / 2 }} className={styles.name}>
         fotogjengen
-      </h4>
+      </p>
     </div>
   );
 };

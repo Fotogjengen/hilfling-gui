@@ -11,11 +11,12 @@
 
 .name {
   padding: 0;
-  margin: auto .5rem;
+  margin: auto 0.5rem;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: normal;
 }
 
 .icon {
   text-align: center;
   margin: auto 0;
 }
-
