@@ -31,10 +31,11 @@ const CardPreamble: FC<Props> = ({
   location,
   centered,
 }: Props) => {
+  const centeredText = cx({ [styles.centered]: centered });
   switch (type) {
     case "EventCard":
       return (
-        <div className={cx({ [styles.centered]: centered })}>
+        <div className={centeredText}>
           {images} bilder
           <DotDivider color={color} />
           {date}
@@ -45,7 +46,7 @@ const CardPreamble: FC<Props> = ({
     case "GjengfotoCard":
       console.log(location);
       return (
-        <div className={cx({ [styles.centered]: centered })}>
+        <div className={centeredText}>
           {images} bilder
           <DotDivider color={color} />
           {date}
