@@ -1,7 +1,7 @@
 import "./styles/globals.css";
 import "./styles/utilities.css";
 
-export { Button } from "./components/Button";
-export { Checkbox } from "./components/Checkbox";
-export { CardTitle } from "./components/CardTitle";
-export { CheckboxSvg } from "./components/icons";
+export { default as Button } from "./components/Button";
+export { default as Checkbox } from "./components/Checkbox";
+export { default as CardTitle } from "./components/CardTitle";
+export { default as RadioButton } from "./components/RadioButton";

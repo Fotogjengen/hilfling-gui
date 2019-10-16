@@ -21,6 +21,6 @@ Use as any other npm component library
 
 ## Publish NPM package
 1. `npm login` med fotogjengen-web bruker
-2. `npm patch` eller `npm version <version number>`, sistnevnte for breaking changes
+2. `npm version patch` eller `npm version <version number>`, sistnevnte for breaking changes
 3. `npm publish`
 

@@ -6,13 +6,13 @@ interface Props {
   /** True if checkbox is checked */
   checked?: boolean;
   /** True if not able to change component state */
-  notChangable?: boolean;
+  notChangeable?: boolean;
 }
 
-const Checkbox: FC<Props> = ({ checked = false, notChangable }: Props) => {
-  const [checkedBox, setCheckedBox] = useState<boolean>(checked);
+const Checkbox: FC<Props> = ({ checked = false, notChangeable }: Props) => {
+  const [checkedBox, setCheckedBox] = useState(checked);
   const handleClick = () => {
-    if (notChangable) return;
+    if (notChangeable) return;
     setCheckedBox(!checkedBox);
   };
   return (
