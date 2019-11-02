@@ -1,27 +1,39 @@
-import React, { FC, useState } from "react";
-import cx from "classnames";
+import React, { FC } from "react";
+import HamburgerMenu, { HamburgerMenuProps } from "react-hamburger-menu";
 import styles from "./Hamburger.module.css";
 
-interface Props {
-  open: boolean;
-  size: number;
-  color: string;
-}
-
-const Hamburger: FC<Props> = ({ open, size, color, ...rest }: Props) => {
-  const topBun = cx({ [styles.topBunChange]: open }, styles.line);
-  const meat = cx({ [styles.meatChange]: open }, styles.line);
-  const bottomBun = cx({ [styles.bottomBunChange]: open }, styles.line);
+const Hamburger: FC<HamburgerMenuProps> = ({
+  isOpen,
+  height,
+  width,
+  strokeWidth,
+  color,
+  animationDuration,
+  borderRadius,
+  menuClicked,
+  rotate,
+}: HamburgerMenuProps) => {
+  const inlineStyles = {
+    container: {
+      height: height,
+      width: width,
+      margin: "auto 2rem auto 0",
+    },
+  };
 
   return (
-    <div
-      style={{ height: size, width: size }}
-      className={styles.hamburger}
-      {...rest}
-    >
-      <div style={{ width: size, background: color }} className={topBun} />
-      <div style={{ width: size, background: color }} className={meat} />
-      <div style={{ width: size, background: color }} className={bottomBun} />
+    <div style={inlineStyles.container} className={styles.container}>
+      <HamburgerMenu
+        menuClicked={menuClicked}
+        isOpen={isOpen}
+        color={color}
+        height={height}
+        width={width}
+        strokeWidth={strokeWidth}
+        animationDuration={animationDuration}
+        borderRadius={borderRadius}
+        rotate={rotate}
+      ></HamburgerMenu>
     </div>
   );
 };

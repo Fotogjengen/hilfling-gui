@@ -4,8 +4,8 @@
 }
 
 .headerTextElement {
-  margin: 0;
-  padding: 0;
+  margin: 1rem 2rem 1rem 0;
+  user-select: none;
 }
 
 .headerTextElement:hover {

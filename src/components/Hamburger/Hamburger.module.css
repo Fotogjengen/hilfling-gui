@@ -1,35 +1,11 @@
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background: transparent;
-  border: none;
+.container {
+ display: inline-block;
+}
+
+.container:hover {
   cursor: pointer;
-  padding: 0;
-  z-index: 10;
+  transform: scale(1.07);
 }
 
-.hamburger:focus {
-  outline: none;
-}
 
-.line {
-  height: 0.25rem;
-  border-radius: 10px;
-  transition: all 0.3s linear;
-  position: relative;
-  transform-origin: 1px;
-}
 
-.topBunChange {
-  transform: rotate(45deg);
-}
-
-.meatChange {
-  opacity: 0;
-  transform: translateX(20px);
-}
-
-.bottomBunChange {
-  transform: rotate(-45deg);
-}

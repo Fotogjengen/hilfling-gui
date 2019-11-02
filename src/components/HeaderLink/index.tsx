@@ -8,13 +8,13 @@ export interface Props {
 
 const HeaderLink: FC<Props> = ({ children, size, ...rest }: Props) => (
   <div className={styles.container}>
-    <h4
+    <p
       style={{ fontSize: size }}
       className={styles.headerTextElement}
       {...rest}
     >
       {children}
-    </h4>
+    </p>
   </div>
 );
 

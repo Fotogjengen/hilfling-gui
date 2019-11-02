@@ -1,14 +1,16 @@
-import React, { FC, SyntheticEvent } from "react";
+import React, { FC, ReactNode } from "react";
+import styles from "./Header.module.css";
 import Logo from "../Logo";
 
 interface Props {
+  children?: ReactNode;
   size: number;
-  goHome(): void;
 }
 
-const Header: FC<Props> = ({ size, goHome }: Props) => (
-  <div>
-    <Logo size={size} onClick={goHome}/>
+const Header: FC<Props> = ({ size, children }: Props) => (
+  <div className={styles.container}>
+    <Logo size={size} />
+    <div className={styles.childrenContainer}>{children}</div>
   </div>
 );
 

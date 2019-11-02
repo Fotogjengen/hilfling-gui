@@ -12,3 +12,5 @@ export { default as Input } from "./components/Input";
 export { default as RadioButton } from "./components/RadioButton";
 export { default as PhotographerTag } from "./components/PhotographerTag";
 export { default as Logo } from "./components/Logo";
+export { default as HeaderLink } from "./components/HeaderLink";
+export { default as Header } from "./components/Header";
