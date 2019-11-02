@@ -10,3 +10,4 @@ export { default as DotDivider } from "./components/DotDivider";
 export { default as Image } from "./components/Image";
 export { default as Input } from "./components/Input";
 export { default as RadioButton } from "./components/RadioButton";
+export { default as PhotographerTag } from "./components/PhotographerTag";
