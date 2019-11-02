@@ -11,6 +11,10 @@ export { Image, ProfileImage } from "./components/Image";
 export { default as Input } from "./components/Input";
 export { default as RadioButton } from "./components/RadioButton";
 export { default as PhotographerTag } from "./components/PhotographerTag";
+<<<<<<< HEAD
 export { default as Logo } from "./components/Logo";
+=======
+export { default as Hamburger } from "./components/Hamburger";
+>>>>>>> e9ed3a8... :sparkles: update import paths
 export { default as HeaderLink } from "./components/HeaderLink";
 export { default as Header } from "./components/Header";

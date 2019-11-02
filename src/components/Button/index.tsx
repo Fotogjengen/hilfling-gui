@@ -17,7 +17,7 @@ interface Props {
   submit?: boolean;
 }
 
-export const Button: FC<Props> = ({
+const Button: FC<Props> = ({
   children,
   primary,
   warning,

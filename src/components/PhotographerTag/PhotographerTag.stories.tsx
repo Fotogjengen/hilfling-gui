@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import PhotographerTag from "./index";
+import PhotographerTag from ".";
 
 storiesOf("Tag", module)
   .addDecorator(withInfo({ inline: true }))
