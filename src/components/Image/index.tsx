@@ -13,12 +13,11 @@ const Image: FC<Props> = ({ src, alt }: Props) => {
 
 interface ProfileImageProps extends Props {
   onClick(): void;
-  size: number;
 }
 
-const ProfileImage: FC<ProfileImageProps> = ({ src, alt, onClick, size }: ProfileImageProps) => {
+const ProfileImage: FC<ProfileImageProps> = ({ src, alt, onClick }: ProfileImageProps) => {
   return <div>
-    <img src={src} alt={alt} onClick={onClick} height={size} width={size} className={styles.profileImage} />
+    <img src={src} alt={alt} onClick={onClick} className={styles.profileImage} />
   </div>;
 };
 

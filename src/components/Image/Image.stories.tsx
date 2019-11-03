@@ -13,7 +13,14 @@ storiesOf("Image", module)
       alt={"image"}
     />
   ))
-  .add("ProfileImage", () => (
-    <ProfileImage src={require("../../../assets/profile_picture.jpg")} alt="test" onClick={() => console.log('test')} size={200}/>
-  ))
+  .add("ProfileImage", () => {
+    const style = {
+      height: "200px",
+      width: "200px"
+    }
+    return <div style={style}>
+      <ProfileImage src={require("../../../assets/profile_picture.jpg")} alt="test"
+                    onClick={() => console.log('test')}/>
+    </div>
+  })
 ;
