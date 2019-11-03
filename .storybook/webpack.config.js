@@ -29,6 +29,10 @@ module.exports = ({ config }) => {
       ],
       include: path.resolve(__dirname, "../"),
     },
+    {
+      test: /\.(gif|png|jpe?g|svg)$/i,
+      use: ["file-loader"],
+    },
   );
   config.resolve.extensions.push(".ts", ".tsx", ".scss", ".css");
   return config;
