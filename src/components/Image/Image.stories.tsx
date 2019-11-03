@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import Image from "./index";
+import { Image, ProfileImage } from ".";
 
 storiesOf("Image", module)
   .addDecorator(withInfo({ inline: true }))
@@ -12,4 +12,15 @@ storiesOf("Image", module)
       }
       alt={"image"}
     />
-  ));
+  ))
+  .add("ProfileImage", () => {
+    const style = {
+      height: "200px",
+      width: "200px"
+    }
+    return <div style={style}>
+      <ProfileImage src={require("../../../assets/profile_picture.jpg")} alt="test"
+                    onClick={() => console.log('test')}/>
+    </div>
+  })
+;
