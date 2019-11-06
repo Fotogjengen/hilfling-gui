@@ -2,17 +2,15 @@ import React, { FC } from "react";
 import styles from "./HeaderLink.module.css";
 
 export interface Props {
+  /** Content inside tags */
   children: any;
-  size: number;
+  /** Function that gets called when clicked */
+  onClick?: () => void;
 }
 
-const HeaderLink: FC<Props> = ({ children, size, ...rest }: Props) => (
+const HeaderLink: FC<Props> = ({ children, onClick, ...rest }: Props) => (
   <div className={styles.container}>
-    <p
-      style={{ fontSize: size }}
-      className={styles.headerTextElement}
-      {...rest}
-    >
+    <p className={styles.headerTextElement} {...rest} onClick={onClick}>
       {children}
     </p>
   </div>

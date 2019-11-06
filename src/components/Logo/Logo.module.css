@@ -1,22 +1,15 @@
 .logo {
   display: flex;
   flex-direction: row;
-  width: fit-content;
+  align-items: baseline;
 }
 
 .logo:hover {
-  transform: scale(1.02);
   cursor: pointer;
 }
 
 .name {
-  padding: 0;
-  margin: auto 0.5rem;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-weight: normal;
-}
-
-.icon {
-  text-align: center;
+  padding-left: 1rem;
   margin: auto 0;
+  font-family: Roboto, Futura, "Trebuchet MS", Arial, sans-serif;
 }

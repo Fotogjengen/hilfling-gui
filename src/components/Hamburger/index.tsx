@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import HamburgerMenu, { HamburgerMenuProps } from "react-hamburger-menu";
 import styles from "./Hamburger.module.css";
 
@@ -13,19 +13,16 @@ const Hamburger: FC<HamburgerMenuProps> = ({
   menuClicked,
   rotate,
 }: HamburgerMenuProps) => {
-  const inlineStyles = {
-    container: {
-      height: height,
-      width: width,
-      margin: "auto 2rem auto 0",
-    },
+  const [displayCross, setDisplayCross] = useState(isOpen);
+  const handleClick = () => {
+    setDisplayCross(!displayCross);
+    menuClicked();
   };
-
   return (
-    <div style={inlineStyles.container} className={styles.container}>
+    <div className={styles.container}>
       <HamburgerMenu
-        menuClicked={menuClicked}
-        isOpen={isOpen}
+        menuClicked={handleClick}
+        isOpen={displayCross}
         color={color}
         height={height}
         width={width}

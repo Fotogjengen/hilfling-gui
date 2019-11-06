@@ -10,10 +10,8 @@ interface Props {
 const Logo: FC<Props> = ({ size, ...rest }: Props) => {
   return (
     <div style={{ height: size }} className={styles.logo} {...rest}>
-      <div className={styles.icon}>
-        <LogoSvg size={size} />
-      </div>
-      <p style={{ fontSize: size / 2 }} className={styles.name}>
+      <LogoSvg size={size} />
+      <p style={{ fontSize: size * 0.7 }} className={styles.name}>
         fotogjengen
       </p>
     </div>

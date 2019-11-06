@@ -1,8 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import HeaderTextElement from ".";
+import HeaderLink from ".";
 
-storiesOf("HeaderTextElement", module)
+storiesOf("Header link", module)
   .addDecorator(withInfo({ inline: true }))
-  .add("Normal", () => <HeaderTextElement size={20}>Text</HeaderTextElement>);
+  .add("Normal", () => <HeaderLink>Text</HeaderLink>);
