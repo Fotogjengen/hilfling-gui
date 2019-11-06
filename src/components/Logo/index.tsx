@@ -3,13 +3,20 @@ import styles from "./Logo.module.css";
 import { LogoSvg } from "../icons";
 
 interface Props {
+  /** Size of logo, text scales with logo */
   size: number;
-  onClick?(event: SyntheticEvent): void;
+  /** What happens when clicking on logo */
+  onClick?: () => void;
 }
 
-const Logo: FC<Props> = ({ size, ...rest }: Props) => {
+const Logo: FC<Props> = ({ size, onClick, ...rest }: Props) => {
   return (
-    <div style={{ height: size }} className={styles.logo} {...rest}>
+    <div
+      style={{ height: size }}
+      className={styles.logo}
+      onClick={onClick}
+      {...rest}
+    >
       <LogoSvg size={size} />
       <p style={{ fontSize: size * 0.7 }} className={styles.name}>
         fotogjengen
