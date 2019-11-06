@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import RadioButtonSvg from "../icons/RadioButton";
+import { RadioButtonSvg } from "../icons";
 import styles from "./RadioButton.module.css";
 
 interface Props {

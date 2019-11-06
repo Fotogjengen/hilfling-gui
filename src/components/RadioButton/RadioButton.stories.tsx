@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import RadioButton from "./index";
+import RadioButton from ".";
 
 storiesOf("RadioButton", module)
   .addDecorator(withInfo({ inline: true }))

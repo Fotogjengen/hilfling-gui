@@ -1,8 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import CardPreamble from "./index";
-import DotDivider from "../DotDivider/index";
+import CardPreamble from ".";
+import DotDivider from "../DotDivider";
 
 storiesOf("Card Preamble", module)
   .addDecorator(withInfo({ inline: true }))
