@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import DropDownArrow from "../icons/dropDownArrow";
+import DropDownArrow from "../icons/DropDownArrow";
 import styles from "./Dropdown.module.css";
 
 interface Props {
@@ -18,7 +18,9 @@ const Dropdown: FC<Props> = ({ options, whenSelected }: Props) => {
       <select className={styles.select} onChange={whenSelected}>
         {optionsList}
       </select>
-      <DropDownArrow className={styles.dropDownArrow} />
+      <div className={styles.arrow}>
+        <DropDownArrow />
+      </div>
     </div>
   );
 };
