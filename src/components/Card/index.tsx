@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import cx from "classnames";
 import styles from "./Card.module.css";
+import { DefaultProps } from "../../types";
 
 type UKA = "uka";
 type SAMFUNDET = "samfundet";
@@ -9,7 +10,7 @@ type ANNET = "annet";
 
 type EventType = UKA | SAMFUNDET | ISFIT | ANNET;
 
-interface Props {
+interface Props extends DefaultProps {
   /** Children components */
   children?: any;
   /** Specifies type of event card */
@@ -18,14 +19,19 @@ interface Props {
   rounded?: boolean;
 }
 
-const Card: FC<Props> = ({ children, type, rounded = false }: Props) => {
+const Card: FC<Props> = ({
+  children,
+  type,
+  rounded = false,
+  className,
+}: Props) => {
   console.log(type);
   return (
     <div
       className={
         type
-          ? cx(styles[type], styles.card)
-          : cx(rounded && styles.rounded, styles.card)
+          ? cx(styles[type], styles.card, className)
+          : cx(rounded && styles.rounded, styles.card, className)
       }
     >
       {children}

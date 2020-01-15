@@ -1,8 +1,10 @@
 import React, { FC, useState } from "react";
 import HamburgerMenu, { HamburgerMenuProps } from "react-hamburger-menu";
 import styles from "./Hamburger.module.css";
+import { DefaultProps } from "../../types";
+import cx from "classnames";
 
-const Hamburger: FC<HamburgerMenuProps> = ({
+const Hamburger: FC<HamburgerMenuProps & DefaultProps> = ({
   isOpen,
   height,
   width,
@@ -12,14 +14,16 @@ const Hamburger: FC<HamburgerMenuProps> = ({
   borderRadius,
   menuClicked,
   rotate,
-}: HamburgerMenuProps) => {
+  className,
+  ...rest
+}) => {
   const [displayCross, setDisplayCross] = useState(isOpen);
   const handleClick = () => {
     setDisplayCross(!displayCross);
     menuClicked();
   };
   return (
-    <div className={styles.container}>
+    <div className={cx(styles.container, className)} {...rest}>
       <HamburgerMenu
         menuClicked={handleClick}
         isOpen={displayCross}
