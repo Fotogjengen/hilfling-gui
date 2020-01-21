@@ -14,3 +14,4 @@ export { default as Logo } from "./components/Logo";
 export { default as Hamburger } from "./components/Hamburger";
 export { default as HeaderLink } from "./components/HeaderLink";
 export { default as Header } from "./components/Header";
+export { default as Footer } from "./components/Footer";
