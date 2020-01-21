@@ -5,7 +5,7 @@ import Instagram from "../icons/Instagram";
 import cx from "classnames";
 
 
-const Footer: FC<Props> = () => {
+const Footer: FC<{}> = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.footerContent}>
