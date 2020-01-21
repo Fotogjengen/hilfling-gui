@@ -4,7 +4,6 @@ import Facebook from "../icons/Facebook";
 import Instagram from "../icons/Instagram";
 import cx from "classnames";
 
-interface Props {}
 
 const Footer: FC<Props> = () => {
   return (
