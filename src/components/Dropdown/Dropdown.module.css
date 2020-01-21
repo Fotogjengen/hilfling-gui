@@ -18,16 +18,8 @@ select {
   appearance: none;
   background: transparent url("../../../assets/icons/arrow.svg") no-repeat right
     center;
+  -webkit-appearance: none;
 }
-select:focus {
-  background: transparent url("../../../assets/icons/arrow_reversed.svg")
-    no-repeat right;
-}
-/*select:focus {
-  outline: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-color: var(--color-gray-1);
-}*/
 
 select:disabled {
   outline: none;

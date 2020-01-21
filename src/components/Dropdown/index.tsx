@@ -18,9 +18,7 @@ const Dropdown: FC<Props> = ({ options, whenSelected }: Props) => {
       <select className={styles.select} onChange={whenSelected}>
         {optionsList}
       </select>
-      <div className={styles.arrow}>
-        <DropDownArrow />
-      </div>
+      <div className={styles.arrow}></div>
     </div>
   );
 };
