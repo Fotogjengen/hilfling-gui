@@ -2,16 +2,18 @@ import React, { FC, ReactNode } from "react";
 import styles from "./Header.module.css";
 import Logo from "../Logo";
 import Hamburger from "../Hamburger";
+import { DefaultProps } from "../../types";
+import cx from "classnames";
 
-interface Props {
+interface Props extends DefaultProps {
   /** Elements in the header, after hamburger meny */
   children?: any;
 }
 
-const Header: FC<Props> = ({ children }: Props) => (
+const Header: FC<Props> = ({ children, className, ...rest }: Props) => (
   <div className={styles.container}>
     <Logo size={60} />
-    <div className={styles.childrenContainer}>
+    <div className={cx(styles.childrenContainer, className)} {...rest}>
       <Hamburger
         menuClicked={() => console.log("click")}
         color="black"
