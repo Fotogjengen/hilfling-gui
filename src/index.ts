@@ -1,5 +1,4 @@
 import "./styles/globals.css";
-import "./styles/utilities.module.css";
 
 export { default as Button } from "./components/Button";
 export { default as Card } from "./components/Card";
@@ -15,5 +14,7 @@ export { default as Logo } from "./components/Logo";
 export { default as Hamburger } from "./components/Hamburger";
 export { default as HeaderLink } from "./components/HeaderLink";
 export { default as Header } from "./components/Header";
+export { default as DropDown } from "./components/Dropdown";
+export { default as Footer } from "./components/Footer";
 export { default as CarouselItems } from "./components/CarouselItem";
 export { default as Carousel } from "./components/Carousel";

@@ -1,8 +1,9 @@
 import React, { FC } from "react";
 import cx from "classnames";
 import styles from "./CardTitle.module.css";
+import { DefaultProps } from "../../types";
 
-interface Props {
+interface Props extends DefaultProps {
   /** Title */
   title: string;
   /** If title should be capitalized */
@@ -15,12 +16,14 @@ const CardTitle: FC<Props> = ({
   title,
   capitalized,
   centered,
+  className,
   ...rest
 }: Props) => {
   const classname = cx(
     styles.cardtitle,
     { [styles.capitalized]: capitalized },
     { [styles.centered]: centered },
+    className,
   );
   return (
     <h2 className={classname} {...rest}>

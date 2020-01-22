@@ -1,19 +1,21 @@
 import React, { FC, SyntheticEvent } from "react";
 import styles from "./Logo.module.css";
 import { LogoSvg } from "../icons";
+import { DefaultProps } from "../../types";
+import cx from "classnames";
 
-interface Props {
+interface Props extends DefaultProps {
   /** Size of logo, text scales with logo */
   size: number;
   /** What happens when clicking on logo */
   onClick?: () => void;
 }
 
-const Logo: FC<Props> = ({ size, onClick, ...rest }: Props) => {
+const Logo: FC<Props> = ({ size, onClick, className, ...rest }: Props) => {
   return (
     <div
       style={{ height: size }}
-      className={styles.logo}
+      className={cx(styles.logo, className)}
       onClick={onClick}
       {...rest}
     >

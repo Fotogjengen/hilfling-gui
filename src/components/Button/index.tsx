@@ -1,8 +1,9 @@
 import React, { FC } from "react";
 import cx from "classnames";
 import styles from "./Button.module.css";
+import { DefaultProps } from "../../types";
 
-interface Props {
+interface Props extends DefaultProps {
   /** Content inside */
   children?: any;
   /** Primary button styling */
@@ -24,6 +25,7 @@ const Button: FC<Props> = ({
   onClick,
   disabled = false,
   submit,
+  className,
   ...rest
 }: Props) => {
   const buttonClass = cx(
@@ -33,6 +35,7 @@ const Button: FC<Props> = ({
     {
       [styles.disabled]: disabled && !onClick,
     },
+    className,
   );
   const handleClick = () => {
     if (!onClick) return;
