@@ -1,5 +1,6 @@
 import { ReactNodeArray } from "react";
-export interface CarouselProps {
+import { DefaultProps } from "../../types";
+export interface CarouselProps extends DefaultProps{
   children: ReactNodeArray;
   delay: number;
   width?: number;
