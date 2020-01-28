@@ -1,14 +1,11 @@
 .root {
   width: 900px;
   height: 600px;
-  max-height: 600px;
-  max-width: 900px;
   overflow-x: hidden;
   position: relative;
 }
 
 .container {
-  /* TODO: Add transition */
   width: auto;
   height: inherit;
   max-height: inherit;
@@ -19,8 +16,6 @@
   white-space: initial;
 }
 
-.arrowIcon {
-}
 .arrowButton {
   position: absolute;
   z-index: 1;
@@ -40,7 +35,6 @@
   max-height: inherit;
   position: relative;
   display: inline-block;
-  /* TODO: Add transition */
 }
 
 .size1 {

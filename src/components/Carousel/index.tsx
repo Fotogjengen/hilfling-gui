@@ -1,7 +1,20 @@
 import React, { FC, useEffect, useState } from "react";
-import { CarouselProps } from "./types";
 import styles from "./Carousel.module.css";
 import cx from "classnames";
+import { DefaultProps } from "../../types";
+import { ReactNodeArray } from "react";
+
+interface CarouselProps extends DefaultProps {
+  children: ReactNodeArray;
+  delay: number;
+  width?: number;
+  height?: number;
+  bottomNavigation?: boolean;
+  bottomNavigationOpacity?: number;
+  inactiveImageButtonColor?: string;
+  activeImageButtonColor?: string;
+  onClick?: (activeItem: number) => void;
+}
 
 const Carousel: FC<CarouselProps> = ({
   children,
@@ -14,14 +27,9 @@ const Carousel: FC<CarouselProps> = ({
   bottomNavigation = true,
   onClick,
   ...rest
-}) => {
+}: CarouselProps) => {
   const [activeItem, setActiveItem] = useState<number>(0);
   const numVisibleItems = 1;
-
-  useEffect(() => {
-    const timeoutID = setTimeout(() => changeActiveItem(), delay);
-    return () => clearTimeout(timeoutID);
-  }, [activeItem]);
 
   const changeActiveItem = (clicked?: number) => {
     if (clicked) {
@@ -30,6 +38,11 @@ const Carousel: FC<CarouselProps> = ({
     }
     setActiveItem(activeItem + 1 < children.length ? activeItem + 1 : 0);
   };
+
+  useEffect(() => {
+    const timeoutID = setTimeout(() => changeActiveItem(), delay);
+    return () => clearTimeout(timeoutID);
+  }, [activeItem]);
 
   const renderCarouselItem = () => {
     return children.map((child, i) => (

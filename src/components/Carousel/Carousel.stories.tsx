@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import Carousel from "./index";
 import CarouselItems from "../CarouselItem";
-import { BaseCarouselItem } from "../CarouselItem/types";
+import { BaseCarouselItem } from "../../types";
 
 const width = 900;
 const height = 600;
