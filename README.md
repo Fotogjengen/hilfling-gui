@@ -24,3 +24,4 @@ Use as any other npm component library
 2. `npm version patch` eller `npm version <version number>`, sistnevnte for breaking changes
 3. `npm publish`
 
+
