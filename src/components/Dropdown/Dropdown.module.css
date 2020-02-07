@@ -16,8 +16,7 @@ select {
   width: 100%;
   position: relative;
   appearance: none;
-  background: transparent url("../../../assets/icons/arrow_down.svg") no-repeat
-    right center;
+  background: transparent url("../icons/arrow_down.svg") no-repeat right center;
   -webkit-appearance: none;
 }
 

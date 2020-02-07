@@ -30,7 +30,7 @@ module.exports = ({ config }) => {
       include: path.resolve(__dirname, "../"),
     },
     {
-      test: /\.(gif|png|jpe?g|svg)$/i,
+      test: /\.(gif|png|jpe?)$/i,
       use: ["file-loader"],
     },
   );
