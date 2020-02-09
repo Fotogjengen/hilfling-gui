@@ -7,3 +7,12 @@ export interface BaseCarouselItem {
   title: string;
   image: string;
 }
+
+
+type UKA = "uka";
+type SAMFUNDET = "samfundet";
+type ISFIT = "isfit";
+type ANNET = "annet";
+
+export type EventType = UKA | SAMFUNDET | ISFIT | ANNET;
+

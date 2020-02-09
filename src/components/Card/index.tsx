@@ -1,14 +1,8 @@
 import React, { FC } from "react";
 import cx from "classnames";
 import styles from "./Card.module.css";
-import { DefaultProps } from "../../types";
+import { DefaultProps, EventType } from "../../types";
 
-type UKA = "uka";
-type SAMFUNDET = "samfundet";
-type ISFIT = "isfit";
-type ANNET = "annet";
-
-type EventType = UKA | SAMFUNDET | ISFIT | ANNET;
 
 interface Props extends DefaultProps {
   /** Children components */
