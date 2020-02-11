@@ -1,16 +1,16 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import Tab from ".";
+import  Tab from ".";
 
 storiesOf("Tab", module)
   .addDecorator(withInfo({ inline: true }))
-  .add("Tab: Samfundet", () => <Tab disabled={false} type={"samfundet"}>SAMFUNDET</Tab>)
-  .add("Tab: UKA", () => <Tab disabled={false} type={"uka"}>UKA</Tab>)
+  .add("Tab: Samfundet", () => <Tab type={"samfundet"}>SAMFUNDET</Tab>)
+  .add("Tab: UKA", () => <Tab type={"uka"}>UKA</Tab>)
   .add("Tab: Isfit", () =>
-    <Tab disabled={false} type={"isfit"}>ISFIT</Tab>
+    <Tab type={"isfit"}>ISFIT</Tab>
   )
-  .add("Tab: Annet", () => <Tab disabled={false} type={"annet"}>ANNET</Tab>
+  .add("Tab: Annet", () => <Tab type={"annet"}>ANNET</Tab>
   )
-  .add("Disabled", () => <Tab disabled={true}></Tab>);
+  .add("Disabled", () => <Tab></Tab>);
 
