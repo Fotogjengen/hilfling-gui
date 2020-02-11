@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import cx from "classnames";
 import styles from "./Tab.module.css";
 import { DefaultProps, EventType } from "../../types";
@@ -14,20 +14,23 @@ interface Props extends DefaultProps {
   disabled?: boolean;
   /** Is it a submit button? */
   submit?: boolean;
+  /** Is it active? */
+  active: boolean;
 }
 
 const Tab: FC<Props> = ({
   children,
   type,
+  active,
   onClick,
-  disabled = false,
   className,
   ...rest
 }: Props) => {
+  const [current, setCurrent] = useState(active);
   const tabClass = cx(
     styles.tab,
     {
-      [styles.disabled]: disabled && !onClick,
+      [styles.active]: current,
     },
     { [styles.samfundet]: type==="samfundet" },
     { [styles.uka]: type==="uka" },
@@ -37,13 +40,15 @@ const Tab: FC<Props> = ({
   );
   const handleClick = () => {
     if (!onClick) return;
+    if(current){
+      setCurrent(!current);
+    }
     onClick();
   };
   return (
     <button
       className={tabClass}
       onClick={handleClick}
-      disabled={disabled}
       {...rest}
     >
       {children}
@@ -51,4 +56,5 @@ const Tab: FC<Props> = ({
   );
 };
 
-export default Tab;
+
+  export default Tab;
