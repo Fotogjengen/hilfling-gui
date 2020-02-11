@@ -20,6 +20,9 @@ This project uses React Typescript to write components and Storybook as componen
 Use as any other npm component library
 
 ## Publish NPM package
+
+Remember to export the module in `src/index.tsx` before publishing ;)
+
 1. `npm login` med fotogjengen-web bruker
 2. `npm version patch` eller `npm version <version number>`, sistnevnte for breaking changes
 3. `npm publish`
