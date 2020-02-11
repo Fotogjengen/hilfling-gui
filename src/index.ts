@@ -18,3 +18,4 @@ export { default as DropDown } from "./components/Dropdown";
 export { default as Footer } from "./components/Footer";
 export { default as CarouselItems } from "./components/CarouselItem";
 export { default as Carousel } from "./components/Carousel";
+export { default as ChildPageHeader } from "./components/ChildPageHeader";
