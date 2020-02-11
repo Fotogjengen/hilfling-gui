@@ -7,3 +7,8 @@ export interface BaseCarouselItem {
   title: string;
   image: string;
 }
+
+type EventCard = "EventCard";
+type GjengfotoCard = "GjengfotoCard";
+
+export type CardType = EventCard | GjengfotoCard;
