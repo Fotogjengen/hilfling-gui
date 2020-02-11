@@ -32,29 +32,24 @@ const Tab: FC<Props> = ({
     {
       [styles.active]: current,
     },
-    { [styles.samfundet]: type==="samfundet" },
-    { [styles.uka]: type==="uka" },
-    { [styles.isfit]: type==="isfit" },
-    { [styles.annet]: type==="annet" },
+    { [styles.samfundet]: type === "samfundet" },
+    { [styles.uka]: type === "uka" },
+    { [styles.isfit]: type === "isfit" },
+    { [styles.annet]: type === "annet" },
     className,
   );
   const handleClick = () => {
     if (!onClick) return;
-    if(current){
+    if (current) {
       setCurrent(!current);
     }
     onClick();
   };
   return (
-    <button
-      className={tabClass}
-      onClick={handleClick}
-      {...rest}
-    >
+    <button className={tabClass} onClick={handleClick} {...rest}>
       {children}
     </button>
   );
 };
 
-
-  export default Tab;
+export default Tab;
