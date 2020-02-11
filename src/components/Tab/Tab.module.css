@@ -1,7 +1,7 @@
 @import "../../styles/globals.css";
 @import "../../styles/variables.css";
 
-.Tab {
+.tab {
   color: white;
   height: 41px;
   min-width: 115px;
@@ -9,17 +9,13 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-width: 1.3px;
-  font-size: 16px;
-  font-family: "Raleway", Arial, Helvetica, sans-serif;
-  font-weight: 600;
 }
 
-.Tab:focus {
+.tab:focus {
   outline: none;
 }
 
-.Tab:active {
+.tab:active {
   box-shadow: none;
   transform: scale(0.99);
 }
@@ -48,30 +44,31 @@
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
 }
 .samfundet {
-  background-color: #ba202c;
+  background-color: var(--hilfling-samfundet-red);
   border-color: #aa1c28;
 
 }
 .uka {
-  background-color: #fee040;
+  background-color: var(--hilfling-uka-yellow);
   border-color: #d1b828;
 
 }
 
 .isfit{
-  background-color: #09c;
+  background-color: var(--hilfling-isfit-blue);
   border-color: rgb(9, 145, 190);
 
 }
 
 .annet{
-  background-color: #feb640;
+  background-color: var(--hilfling-annet-orange);
   border-color: #d4942c;
 
 }
 
 .active{
   background-color: white;
+  border-color: #F4F4F4;
 
 }
 

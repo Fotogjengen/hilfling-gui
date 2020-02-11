@@ -21,12 +21,11 @@ const Tab: FC<Props> = ({
   type,
   onClick,
   disabled = false,
-  submit,
   className,
   ...rest
 }: Props) => {
-  const TabClass = cx(
-    styles.Tab,
+  const tabClass = cx(
+    styles.tab,
     {
       [styles.disabled]: disabled && !onClick,
     },
@@ -42,7 +41,7 @@ const Tab: FC<Props> = ({
   };
   return (
     <button
-      className={TabClass}
+      className={tabClass}
       onClick={handleClick}
       disabled={disabled}
       {...rest}
