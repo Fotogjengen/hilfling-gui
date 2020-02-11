@@ -49,20 +49,24 @@
 }
 .samfundet {
   background-color: #ba202c;
+  border-color: #aa1c28;
 
 }
 .uka {
   background-color: #fee040;
+  border-color: #d1b828;
 
 }
 
 .isfit{
   background-color: #09c;
+  border-color: rgb(9, 145, 190);
 
 }
 
 .annet{
   background-color: #feb640;
+  border-color: #d4942c;
 
 }
 
