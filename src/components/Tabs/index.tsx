@@ -1,6 +1,4 @@
 import React, { FC, useState } from "react";
-import cx from "classnames";
-import styles from "./Tabs.module.css";
 import { DefaultProps, EventType } from "../../types";
 import Tab from "../Tab";
 
@@ -31,16 +29,20 @@ const Tabs: FC<Props> = ({
   };
   return (
     <div>
-      <Tab onClick={setCurrent} type={"samfundet"}  active={current=="samfundet"}>
+      <Tab
+        onClick={setCurrent}
+        type={"samfundet"}
+        active={current == "samfundet"}
+      >
         SAMFUNDET
       </Tab>
-      <Tab onClick={setCurrent} type={"uka"} active={current=="uka"}>
+      <Tab onClick={setCurrent} type={"uka"} active={current == "uka"}>
         UKA
       </Tab>
-      <Tab onClick={setCurrent} type={"isfit"} active={current=="isfit"}>
+      <Tab onClick={setCurrent} type={"isfit"} active={current == "isfit"}>
         ISFIT
       </Tab>
-      <Tab onClick={setCurrent} type={"annet"} active={current=="annet"}>
+      <Tab onClick={setCurrent} type={"annet"} active={current == "annet"}>
         ANNET
       </Tab>
     </div>

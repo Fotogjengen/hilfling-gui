@@ -9,10 +9,10 @@ export interface BaseCarouselItem {
 }
 
 
-type UKA = "uka";
-type SAMFUNDET = "samfundet";
-type ISFIT = "isfit";
-type ANNET = "annet";
+export type UKA = "uka";
+export type SAMFUNDET = "samfundet";
+export type ISFIT = "isfit";
+export type ANNET = "annet";
 
 export type EventType = UKA | SAMFUNDET | ISFIT | ANNET;
 
