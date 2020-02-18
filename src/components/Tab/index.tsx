@@ -7,13 +7,11 @@ interface Props extends DefaultProps {
   /** Content inside */
   children?: any;
   /** Primary button styling */
-  type?: EventType;
+  type: EventType;
   /** Called when a button is clicked */
-  onClick?: () => void;
+  onClick: (type: string) => void;
   /** Not clickable button */
   disabled?: boolean;
-  /** Is it a submit button? */
-  submit?: boolean;
   /** Is it active? */
   active: boolean;
 }
@@ -24,13 +22,13 @@ const Tab: FC<Props> = ({
   active,
   onClick,
   className,
+  disabled = false,
   ...rest
 }: Props) => {
-  const [current, setCurrent] = useState(active);
   const tabClass = cx(
     styles.tab,
     {
-      [styles.active]: current,
+      [styles.active]: !active,
     },
     { [styles.samfundet]: type === "samfundet" },
     { [styles.uka]: type === "uka" },
@@ -38,15 +36,9 @@ const Tab: FC<Props> = ({
     { [styles.annet]: type === "annet" },
     className,
   );
-  const handleClick = () => {
-    if (!onClick) return;
-    if (current) {
-      setCurrent(!current);
-    }
-    onClick();
-  };
+
   return (
-    <button className={tabClass} onClick={handleClick} {...rest}>
+    <button className={tabClass} onClick={() => onClick(type)} {...rest}>
       {children}
     </button>
   );
