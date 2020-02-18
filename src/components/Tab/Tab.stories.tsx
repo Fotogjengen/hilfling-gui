@@ -6,23 +6,67 @@ import Tabs from "../Tabs";
 
 storiesOf("Tab", module)
   .addDecorator(withInfo({ inline: true }))
-  .add("Tab: Samfundet", () => (
-    <Tab type={"samfundet"} onClick={() => false} active={true}>
-      SAMFUNDET
-    </Tab>
+  .add("Samfundet active", () => (
+    <div>
+      <Tab type={"samfundet"} onClick={() => false} active={true}>
+        SAMFUNDET
+      </Tab>
+      <Tab type={"uka"} onClick={() => false} active={false}>
+        UKA
+      </Tab>
+      <Tab type={"isfit"} onClick={() => false} active={false}>
+        ISFIT
+      </Tab>
+      <Tab type={"annet"} onClick={() => false} active={false}>
+        ANNET
+      </Tab>
+    </div>
   ))
-  .add("Tab: UKA", () => (
-    <Tab type={"uka"} onClick={() => false} active={false}>
-      UKA
-    </Tab>
+  .add("UKA active", () => (
+    <div>
+      <Tab type={"samfundet"} onClick={() => false} active={false}>
+        SAMFUNDET
+      </Tab>
+      <Tab type={"uka"} onClick={() => false} active={true}>
+        UKA
+      </Tab>
+      <Tab type={"isfit"} onClick={() => false} active={false}>
+        ISFIT
+      </Tab>
+      <Tab type={"annet"} onClick={() => false} active={false}>
+        ANNET
+      </Tab>
+    </div>
   ))
-  .add("Tab: Isfit", () => (
-    <Tab type={"isfit"} onClick={() => false} active={false}>
-      ISFIT
-    </Tab>
+  .add("Isfit active", () => (
+    <div>
+      <Tab type={"samfundet"} onClick={() => false} active={false}>
+        SAMFUNDET
+      </Tab>
+      <Tab type={"uka"} onClick={() => false} active={false}>
+        UKA
+      </Tab>
+      <Tab type={"isfit"} onClick={() => false} active={true}>
+        ISFIT
+      </Tab>
+      <Tab type={"annet"} onClick={() => false} active={false}>
+        ANNET
+      </Tab>
+    </div>
   ))
-  .add("Tab: Annet", () => (
-    <Tab type={"annet"} onClick={() => false} active={false}>
-      ANNET
-    </Tab>
+  .add("Annet active", () => (
+    <div>
+      <Tab type={"samfundet"} onClick={() => false} active={false}>
+        SAMFUNDET
+      </Tab>
+      <Tab type={"uka"} onClick={() => false} active={false}>
+        UKA
+      </Tab>
+      <Tab type={"isfit"} onClick={() => false} active={false}>
+        ISFIT
+      </Tab>
+      <Tab type={"annet"} onClick={() => false} active={true}>
+        ANNET
+      </Tab>
+    </div>
   ));
