@@ -2,27 +2,27 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import Tab from ".";
+import Tabs from "../Tabs";
 
 storiesOf("Tab", module)
   .addDecorator(withInfo({ inline: true }))
   .add("Tab: Samfundet", () => (
-    <Tab type={"samfundet"} active={true} onClick={() => false}>
+    <Tab type={"samfundet"} onClick={() => false} active={true}>
       SAMFUNDET
     </Tab>
   ))
   .add("Tab: UKA", () => (
-    <Tab type={"uka"} active={true} onClick={() => false}>
+    <Tab type={"uka"} onClick={() => false} active={false}>
       UKA
     </Tab>
   ))
   .add("Tab: Isfit", () => (
-    <Tab type={"isfit"} active={true} onClick={() => false}>
+    <Tab type={"isfit"} onClick={() => false} active={false}>
       ISFIT
     </Tab>
   ))
   .add("Tab: Annet", () => (
-    <Tab type={"annet"} active={true} onClick={() => false}>
+    <Tab type={"annet"} onClick={() => false} active={false}>
       ANNET
     </Tab>
-  ))
-  .add("Disabled", () => <Tab active={true} onClick={() => false}></Tab>);
+  ));
