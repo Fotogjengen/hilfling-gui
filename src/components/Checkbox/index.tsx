@@ -19,7 +19,7 @@ const Checkbox: FC<Props> = ({
   label,
   ...rest
 }: Props) => {
-  const [checkedBox, setCheckedBox] = useState(checked);
+  const [checkedBox, setCheckedBox] = useState<boolean>(checked);
   const handleClick = () => {
     if (notChangeable) return;
     setCheckedBox(!checkedBox);
