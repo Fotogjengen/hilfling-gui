@@ -258,3 +258,6 @@ $RECYCLE.BIN/
 lib/
 src/**/*.js
 grp/
+
+# Vscode config
+.vscode

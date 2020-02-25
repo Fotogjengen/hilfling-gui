@@ -9,5 +9,4 @@ storiesOf("Tabs", module)
     <Tabs type={"samfundet"} activeTab={"samfundet"} onClick={() => false}>
       TABS
     </Tabs>
-  ))
-  
+  ));
