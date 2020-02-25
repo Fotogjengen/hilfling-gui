@@ -23,15 +23,10 @@ interface Props extends DefaultProps {
   btnName?: string;
 }
 
-interface NewTabProp {
-  color?: any;
-  borderTopColor?: any;
-}
-
 const Tab: FC<Props> = ({
   children,
   type,
-  active  ,
+  active,
   onClick,
   className,
   disabled = false,
