@@ -16,15 +16,10 @@ interface Props extends DefaultProps {
   active: boolean;
 }
 
-interface NewTabProp {
-  color?: any;
-  borderTopColor?: any;
-}
-
 const Tab: FC<Props> = ({
   children,
   type,
-  active  ,
+  active,
   onClick,
   className,
   disabled = false,
