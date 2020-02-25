@@ -33,7 +33,7 @@ const Checkbox: FC<Props> = ({
       >
         <CheckboxSvg checked={checkedBox} />
       </div>
-      <p>&nbsp; {label}</p>
+      <p>{label}</p>
     </div>
   );
 };
