@@ -4,7 +4,7 @@ import cx from "classnames";
 import { DefaultProps } from "../../types";
 
 interface Props extends DefaultProps {
-  src: string;
+  src?: string;
   alt: string;
 }
 
