@@ -33,7 +33,7 @@ const RadioButton: FC<Props> = ({
       >
         <RadioButtonSvg checked={checkedRadio} />
       </div>
-      <p>{label}</p>
+      <p>&nbsp;{label}</p>
     </div>
   );
 };

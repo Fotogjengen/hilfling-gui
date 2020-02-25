@@ -2,3 +2,9 @@
   height: 18px;
   width: 18px;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
