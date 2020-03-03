@@ -3,12 +3,11 @@
 
 .tab {
   color: white;
-  height: 41px;
-  min-width: 115px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  height: 50px;
+  min-width: 150px;
+  font-size: 1.4rem;
+  border-radius: 5px 5px 0px 0px;
+  text-transform: capitalize;
 }
 
 .tab:focus {
