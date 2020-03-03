@@ -16,3 +16,4 @@ export type ANNET = "annet";
 
 export type EventType = UKA | SAMFUNDET | ISFIT | ANNET;
 
+

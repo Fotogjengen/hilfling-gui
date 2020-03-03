@@ -1,14 +1,13 @@
 import React, { FC, useState, CSSProperties } from "react";
-import cx from "classnames";
-import styles from "./Tab.module.css";
 import { DefaultProps, EventType } from "../../types";
-
+import styles from "./OtherTab.module.css";
+import cx from "classnames";
 
 interface Props extends DefaultProps {
   /** Content inside */
   children?: any;
   /** Primary button styling */
-  type: EventType;
+  type?: EventType;
   /** Called when a button is clicked */
   onClick: (type: string) => void;
   /** Not clickable button */
@@ -19,9 +18,8 @@ interface Props extends DefaultProps {
   btnColor?: string;
   /** Button border color */
   btnBorderColor?: string;
-  /** Other button? */
-  btnName?: string;
 }
+
 
 const Tab: FC<Props> = ({
   children,
@@ -30,23 +28,25 @@ const Tab: FC<Props> = ({
   onClick,
   className,
   disabled = false,
+  btnColor,
+  btnBorderColor,
   ...rest
 }: Props) => {
-
   const tabClass = cx(
     styles.tab,
-    {
-      [styles.active]: !active,
-    },
-    { [styles.samfundet]: type === "samfundet" },
-    { [styles.uka]: type === "uka" },
-    { [styles.isfit]: type === "isfit" },
-    { [styles.annet]: type === "annet" },
-    className,
-  );
+    {    
+      [styles.active]: !active
+    }
+    
+    );
 
   return (
-    <button className={tabClass} onClick={() => onClick(type)} {...rest}>
+    <button
+      className={tabClass}
+      onClick={() => onClick("other")}
+      style={{backgroundColor: active ? btnColor : "", borderColor: active ? btnBorderColor : ""}}
+      {...rest}
+    >
       {children}
     </button>
   );

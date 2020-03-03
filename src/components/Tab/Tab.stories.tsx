@@ -2,7 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import Tab from ".";
-import Tabs from "../Tabs";
 
 storiesOf("Tab", module)
   .addDecorator(withInfo({ inline: true }))
