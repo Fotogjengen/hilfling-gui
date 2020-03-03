@@ -18,12 +18,6 @@ export { default as DropDown } from "./components/Dropdown";
 export { default as Footer } from "./components/Footer";
 export { default as CarouselItems } from "./components/CarouselItem";
 export { default as Carousel } from "./components/Carousel";
-<<<<<<< HEAD
-<<<<<<< HEAD
 export { default as ChildPageHeader } from "./components/ChildPageHeader";
-=======
 export { default as Tab } from "./components/Tab";
->>>>>>> Exported Tab component
-=======
-export { default as Tab } from "./components/Tab";
->>>>>>> 2aa86f3544e05cbdc4ad95ae35f3de436dcfd852
+
