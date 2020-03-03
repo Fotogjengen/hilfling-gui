@@ -29,6 +29,7 @@
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
 }
 
+<<<<<<< HEAD:src/components/Tab/Tab.module.css
 .samfundet {
   background-color: var(--hilfling-samfundet-red);
   border-top-color: #aa1c28;
@@ -62,6 +63,8 @@
   border-bottom-color: transparent;
 }
 
+=======
+>>>>>>> Removed unused code:src/components/OtherTab/OtherTab.module.css
 .active {
   background-color: white;
   border-top-color: #f4f4f4;
@@ -70,5 +73,3 @@
   border-bottom-color: transparent;
   color: #a3a3a3;
 }
-
-
