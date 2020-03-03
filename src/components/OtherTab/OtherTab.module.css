@@ -29,29 +29,8 @@
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
 }
 
-.samfundet {
-  background-color: var(--hilfling-samfundet-red);
-  border-color: #aa1c28;
-}
-.uka {
-  background-color: var(--hilfling-uka-yellow);
-  border-color: #d1b828;
-}
-
-.isfit {
-  background-color: var(--hilfling-isfit-blue);
-  border-color: rgb(9, 145, 190);
-}
-
-.annet {
-  background-color: var(--hilfling-annet-orange);
-  border-color: #d4942c;
-}
-
 .active {
   background-color: white;
   border-color: #f4f4f4;
   color: #a3a3a3;
 }
-
-

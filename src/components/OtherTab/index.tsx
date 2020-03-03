@@ -20,7 +20,6 @@ interface Props extends DefaultProps {
   btnBorderColor?: string;
 }
 
-
 const Tab: FC<Props> = ({
   children,
   type,
@@ -32,19 +31,18 @@ const Tab: FC<Props> = ({
   btnBorderColor,
   ...rest
 }: Props) => {
-  const tabClass = cx(
-    styles.tab,
-    {    
-      [styles.active]: !active
-    }
-    
-    );
+  const tabClass = cx(styles.tab, {
+    [styles.active]: !active,
+  });
 
   return (
     <button
       className={tabClass}
       onClick={() => onClick("other")}
-      style={{backgroundColor: active ? btnColor : "", borderColor: active ? btnBorderColor : ""}}
+      style={{
+        backgroundColor: active ? btnColor : "",
+        borderColor: active ? btnBorderColor : "",
+      }}
       {...rest}
     >
       {children}
