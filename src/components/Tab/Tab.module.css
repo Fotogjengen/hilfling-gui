@@ -29,7 +29,10 @@
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD:src/components/Tab/Tab.module.css
+=======
+>>>>>>> 2aa86f3544e05cbdc4ad95ae35f3de436dcfd852
 .samfundet {
   background-color: var(--hilfling-samfundet-red);
   border-top-color: #aa1c28;
@@ -63,8 +66,11 @@
   border-bottom-color: transparent;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> Removed unused code:src/components/OtherTab/OtherTab.module.css
+=======
+>>>>>>> 2aa86f3544e05cbdc4ad95ae35f3de436dcfd852
 .active {
   background-color: white;
   border-top-color: #f4f4f4;
@@ -73,3 +79,8 @@
   border-bottom-color: transparent;
   color: #a3a3a3;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2aa86f3544e05cbdc4ad95ae35f3de436dcfd852
