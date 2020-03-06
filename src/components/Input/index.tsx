@@ -10,7 +10,7 @@ interface Props extends DefaultProps {
   placeholder?: string;
   /** True if it is not allowed to write inside input field */
   disabled?: boolean;
-  ref: any; // TODO mer spesifikk type
+  ref?: any; // TODO mer spesifikk type
 }
 
 const Input: FC<Props> = ({
