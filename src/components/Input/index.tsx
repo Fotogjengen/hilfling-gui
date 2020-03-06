@@ -10,6 +10,7 @@ interface Props extends DefaultProps {
   placeholder?: string;
   /** True if it is not allowed to write inside input field */
   disabled?: boolean;
+  ref: any; // TODO mer spesifikk type
 }
 
 const Input: FC<Props> = ({
@@ -17,6 +18,7 @@ const Input: FC<Props> = ({
   disabled = false,
   placeholder = "",
   className,
+  ref,
   ...rest
 }: Props) => {
   return (
@@ -25,6 +27,7 @@ const Input: FC<Props> = ({
       disabled={disabled}
       placeholder={placeholder}
       className={cx(styles.input, className)}
+      ref={ref}
       {...rest}
     ></input>
   );
