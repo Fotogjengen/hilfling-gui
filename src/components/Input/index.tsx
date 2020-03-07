@@ -27,7 +27,7 @@ const Input: FC<Props> = ({
       disabled={disabled}
       placeholder={placeholder}
       className={cx(styles.input, className)}
-      form={form}
+      ref={form}
       {...rest}
     ></input>
   );
