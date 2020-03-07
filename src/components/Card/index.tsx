@@ -4,13 +4,15 @@ import styles from "./Card.module.css";
 import { DefaultProps, EventType } from "../../types";
 
 
-interface Props extends DefaultProps {
+export interface Props extends DefaultProps {
   /** Children components */
   children?: any;
   /** Specifies type of event card */
   type?: EventType;
   /** Rounded corners */
   rounded?: boolean;
+  /** Shadow */
+  shadow?: boolean;
 }
 
 const Card: FC<Props> = ({
@@ -18,15 +20,20 @@ const Card: FC<Props> = ({
   type,
   rounded = false,
   className,
+  shadow = true,
+  ...rest
 }: Props) => {
   console.log(type);
   return (
     <div
-      className={
-        type
-          ? cx(styles[type], styles.card, className)
-          : cx(rounded && styles.rounded, styles.card, className)
-      }
+      className={cx(
+        {
+          [styles.shadow]: shadow,
+        },
+        styles.card,
+        className,
+        type ? cx(styles[type]) : cx(rounded && styles.rounded),
+      )}
     >
       {children}
     </div>
