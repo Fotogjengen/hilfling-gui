@@ -21,10 +21,10 @@ Use as any other npm component library
 
 ## Publish NPM package
 
-Remember to export the module in `src/index.tsx` before publishing ;)
-
-1. `npm login` med fotogjengen-web bruker
-2. `npm version patch` eller `npm version <version number>`, sistnevnte for breaking changes
-3. `npm publish`
+1. Write your new component - figure out how from our wiki
+2. Export the component in the index.ts file inside the src folder
+3. `npm login` med fotogjengen-web bruker
+4. `npm version patch` eller `npm version <version number>`, sistnevnte for breaking changes
+5. `npm publish`
 
 
