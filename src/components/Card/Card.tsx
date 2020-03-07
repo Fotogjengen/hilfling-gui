@@ -3,7 +3,6 @@ import cx from "classnames";
 import styles from "./Card.module.css";
 import { DefaultProps, EventType } from "../../types";
 
-
 export interface Props extends DefaultProps {
   /** Children components */
   children?: any;
