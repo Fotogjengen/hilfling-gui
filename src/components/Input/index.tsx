@@ -10,7 +10,7 @@ interface Props extends DefaultProps {
   placeholder?: string;
   /** True if it is not allowed to write inside input field */
   disabled?: boolean;
-  register?: React.Ref<HTMLInputElement>; // TODO mer spesifikk type
+  register?: React.Ref<HTMLInputElement>;
 }
 
 const Input: FC<Props> = ({
