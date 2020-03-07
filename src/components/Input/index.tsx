@@ -10,7 +10,7 @@ interface Props extends DefaultProps {
   placeholder?: string;
   /** True if it is not allowed to write inside input field */
   disabled?: boolean;
-  register?: React.Ref<HTMLInputElement>; // TODO mer spesifikk type
+  inputRef?: React.Ref<HTMLInputElement>;
 }
 
 const Input: FC<Props> = ({
@@ -18,7 +18,7 @@ const Input: FC<Props> = ({
   disabled = false,
   placeholder = "",
   className,
-  register,
+  inputRef,
   ...rest
 }: Props) => {
   return (
@@ -27,7 +27,7 @@ const Input: FC<Props> = ({
       disabled={disabled}
       placeholder={placeholder}
       className={cx(styles.input, className)}
-      ref={register}
+      ref={inputRef}
       {...rest}
     ></input>
   );
