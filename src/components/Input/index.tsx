@@ -4,13 +4,13 @@ import cx from "classnames";
 import { DefaultProps } from "../../types";
 
 interface Props extends DefaultProps {
-  /** The input's name, to identify the input in the data submitted with the register's data */
+  /** The input's name, to identify the input in the data submitted with the form's data */
   name: string;
   /** Placeholder in input box */
   placeholder?: string;
   /** True if it is not allowed to write inside input field */
   disabled?: boolean;
-  register?: any; // TODO mer spesifikk type
+  register?: React.RefObject<HTMLInputElement>; // TODO mer spesifikk type
 }
 
 const Input: FC<Props> = ({
