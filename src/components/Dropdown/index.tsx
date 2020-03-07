@@ -7,14 +7,14 @@ interface Props {
   options: Array<string>;
   whenSelected: () => void;
   className?: any;
-  inputRef?: React.Ref<HTMLSelectElement>;
+  // inputRef?: React.Ref<HTMLSelectElement>;
 }
 
 const Dropdown: FC<Props> = ({
   options,
   whenSelected,
   className,
-  inputRef,
+  // inputRef,
   ...rest
 }: Props) => {
   const optionsList = options.map(element => (
@@ -26,7 +26,7 @@ const Dropdown: FC<Props> = ({
   return (
     <div>
       <select
-        ref={inputRef}
+        // ref={inputRef}
         className={selectClass}
         onChange={whenSelected}
         {...rest}
