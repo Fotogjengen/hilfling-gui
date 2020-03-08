@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import CardTitle from "../CardTitle";
 import CardPreamble from "../CardPreamble";
-import ImageCard from "./ImageCard";
+import ImageCard from "./index";
 
 storiesOf("ImageCard", module)
   .addDecorator(withInfo({ inline: true }))

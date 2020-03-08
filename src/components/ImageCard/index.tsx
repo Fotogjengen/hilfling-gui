@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import Card from "./Card";
+import Card from "../Card";
 import { DefaultProps } from "../../types";
-import { Props as CardProps } from "./Card";
+import { Props as CardProps } from "../Card";
 import styles from "./ImageCard.module.css";
 import cx from "classnames";
 

@@ -1,7 +1,7 @@
 import "./styles/globals.css";
 
 export { default as Button } from "./components/Button";
-export { default as Card, ImageCard } from "./components/Card";
+export { default as Card } from "./components/Card";
 export { default as CardPreamble } from "./components/CardPreamble";
 export { default as CardTitle } from "./components/CardTitle";
 export { default as Checkbox } from "./components/Checkbox";
@@ -20,4 +20,4 @@ export { default as CarouselItems } from "./components/CarouselItem";
 export { default as Carousel } from "./components/Carousel";
 export { default as ChildPageHeader } from "./components/ChildPageHeader";
 export { default as Tab } from "./components/Tab";
-
+export { default as ImageCard } from "./components/Card";
