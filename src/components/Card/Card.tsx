@@ -12,6 +12,8 @@ export interface Props extends DefaultProps {
   rounded?: boolean;
   /** Shadow */
   shadow?: boolean;
+  /** onClick method */
+  onClick?: () => void;
 }
 
 const Card: FC<Props> = ({
@@ -20,6 +22,7 @@ const Card: FC<Props> = ({
   rounded = false,
   className,
   shadow = true,
+  onClick,
   ...rest
 }: Props) => {
   console.log(type);
@@ -33,6 +36,7 @@ const Card: FC<Props> = ({
         className,
         type ? cx(styles[type]) : cx(rounded && styles.rounded),
       )}
+      onClick={onClick}
     >
       {children}
     </div>
