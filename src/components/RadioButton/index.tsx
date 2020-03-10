@@ -10,7 +10,7 @@ interface Props extends DefaultProps {
   /** True if not able to change component state */
   notChangeable?: boolean;
   label?: string;
-  onChange?: () => void;
+  onChange?: () => any;
 }
 
 const RadioButton: FC<Props> = ({
