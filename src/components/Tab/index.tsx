@@ -56,7 +56,7 @@ const Tab: FC<Props> = ({
     <button
       className={tabClass}
       style={otherTabStyle}
-      onClick={() => onClick}
+      onClick={onClick}
       {...rest}
     >
       {children}
