@@ -3,12 +3,10 @@ import { RadioButtonSvg } from "../icons";
 import styles from "./RadioButton.module.css";
 import cx from "classnames";
 import { DefaultProps } from "../../types";
-import Facebook from "../icons/Facebook";
 
 interface Props extends DefaultProps {
-  /** True if radiobutton is checked */
-  value: boolean;
-  defaultValue?: boolean;
+  /** True if radiobutton is value */
+  value?: boolean;
   /** True if not able to change component state */
   notChangeable?: boolean;
   label?: string;
@@ -16,18 +14,17 @@ interface Props extends DefaultProps {
 }
 
 const RadioButton: FC<Props> = ({
-  value,
-  defaultValue = false,
+  value = false,
   notChangeable,
   className,
   label,
   inputRef,
   ...rest
 }: Props) => {
-  const [checked, setChecked] = useState<boolean>(value);
+  const [checkedRadio, setCheckedRadio] = useState<boolean>(value);
   const handleClick = () => {
     if (notChangeable) return;
-    setChecked(!checked);
+    setCheckedRadio(!checkedRadio);
   };
   return (
     <div className={styles.container}>
@@ -37,7 +34,7 @@ const RadioButton: FC<Props> = ({
         ref={inputRef}
         {...rest}
       >
-        <RadioButtonSvg checked={value} />
+        <RadioButtonSvg checked={checkedRadio} />
       </div>
       <p>{label}</p>
     </div>
