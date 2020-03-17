@@ -21,11 +21,10 @@ const RadioButton: FC<Props> = ({
   onChange,
   ...rest
 }: Props) => {
-  const [checkedRadio, setCheckedRadio] = useState<boolean>(checked);
+  const [value, setValue] = useState<boolean>(checked);
   const handleClick = () => {
     if (notChangeable) return;
-    setCheckedRadio(!checkedRadio);
-    if (onChange) onChange();
+    setValue(!value);
   };
   return (
     <div className={styles.container}>
@@ -34,7 +33,7 @@ const RadioButton: FC<Props> = ({
         className={cx(styles.radiobutton, className)}
         {...rest}
       >
-        <RadioButtonSvg checked={checkedRadio} />
+        <RadioButtonSvg checked={value} />
       </div>
       <p>{label}</p>
     </div>
