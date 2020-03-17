@@ -33,6 +33,8 @@ const RadioButton: FC<Props> = ({
         type="hidden"
         ref={inputRef}
         checked={checkedRadio}
+        onChange={handleClick}
+        value={checkedRadio.toString()}
       ></input>
       <div
         onClick={handleClick}
