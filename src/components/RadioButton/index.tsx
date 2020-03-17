@@ -6,28 +6,34 @@ import { DefaultProps } from "../../types";
 
 interface Props extends DefaultProps {
   /** True if radiobutton is value */
-  value?: boolean;
+  checked?: boolean;
   /** True if not able to change component state */
   notChangeable?: boolean;
   label?: string;
-  inputRef?: React.Ref<HTMLDivElement>;
+  inputRef?: React.Ref<HTMLInputElement>;
 }
 
 const RadioButton: FC<Props> = ({
-  value = false,
+  checked = false,
   notChangeable,
   className,
   label,
   inputRef,
   ...rest
 }: Props) => {
-  const [checkedRadio, setCheckedRadio] = useState<boolean>(value);
+  const [checkedRadio, setCheckedRadio] = useState<boolean>(checked);
   const handleClick = () => {
     if (notChangeable) return;
     setCheckedRadio(!checkedRadio);
   };
   return (
     <div className={styles.container}>
+      <input
+        name="hiddenRadio"
+        type="hidden"
+        ref={inputRef}
+        checked={checkedRadio}
+      ></input>
       <div
         onClick={handleClick}
         className={cx(styles.radiobutton, className)}
