@@ -1,4 +1,4 @@
-import React, { FC, useState, useCallback } from "react";
+import React, { FC, useState } from "react";
 import { RadioButtonSvg } from "../icons";
 import styles from "./RadioButton.module.css";
 import cx from "classnames";
@@ -10,7 +10,7 @@ interface Props extends DefaultProps {
   /** True if not able to change component state */
   notChangeable?: boolean;
   label?: string;
-  onChange?: () => any;
+  inputRef?: React.Ref<HTMLDivElement>;
 }
 
 const RadioButton: FC<Props> = ({
@@ -18,7 +18,7 @@ const RadioButton: FC<Props> = ({
   notChangeable,
   className,
   label,
-  onChange,
+  inputRef,
   ...rest
 }: Props) => {
   const [value, setValue] = useState<boolean>(checked);
@@ -29,8 +29,9 @@ const RadioButton: FC<Props> = ({
   return (
     <div className={styles.container}>
       <div
-        onChange={handleClick}
+        onClick={handleClick}
         className={cx(styles.radiobutton, className)}
+        ref={inputRef}
         {...rest}
       >
         <RadioButtonSvg checked={value} />
