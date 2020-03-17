@@ -9,7 +9,10 @@ interface Props extends DefaultProps {
   checked?: boolean;
   /** True if not able to change component state */
   notChangeable?: boolean;
+  // Name used to connect to form
+  name: string;
   label?: string;
+  // ref used by react-hooks-form
   inputRef?: React.Ref<HTMLInputElement>;
 }
 
@@ -19,6 +22,7 @@ const RadioButton: FC<Props> = ({
   className,
   label,
   inputRef,
+  name,
   ...rest
 }: Props) => {
   const [checkedRadio, setCheckedRadio] = useState<boolean>(checked);
@@ -29,12 +33,11 @@ const RadioButton: FC<Props> = ({
   return (
     <div className={styles.container}>
       <input
-        name="hiddenRadio"
+        name={name}
         type="hidden"
         ref={inputRef}
         checked={checkedRadio}
         onChange={handleClick}
-        value={checkedRadio.toString()}
       ></input>
       <div
         onClick={handleClick}

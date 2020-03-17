@@ -5,11 +5,20 @@ import RadioButton from ".";
 
 storiesOf("RadioButton", module)
   .addDecorator(withInfo({ inline: true }))
-  .add("Unchecked", () => <RadioButton label="radiobutton" />)
-  .add("Checked", () => <RadioButton value={true} label="radiobutton" />)
+  .add("Unchecked", () => (
+    <RadioButton name="radiobutton" label="radiobutton" />
+  ))
+  .add("Checked", () => (
+    <RadioButton name="radiobutton" checked={true} label="radiobutton" />
+  ))
   .add("Unchecked not changable", () => (
-    <RadioButton notChangeable={true} label="radiobutton" />
+    <RadioButton notChangeable={true} name="radiobutton" label="radiobutton" />
   ))
   .add("Checked not changable", () => (
-    <RadioButton value={true} notChangeable={true} label="radiobutton" />
+    <RadioButton
+      name="radiobutton"
+      checked={true}
+      notChangeable={true}
+      label="radiobutton"
+    />
   ));
