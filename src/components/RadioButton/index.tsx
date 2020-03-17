@@ -38,6 +38,7 @@ const RadioButton: FC<Props> = ({
         ref={inputRef}
         checked={checkedRadio}
         onChange={handleClick}
+        value={checkedRadio.toString()}
       ></input>
       <div
         onClick={handleClick}
