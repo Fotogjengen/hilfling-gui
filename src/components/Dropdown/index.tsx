@@ -5,12 +5,15 @@ import cx from "classnames";
 
 interface Props {
   options: Array<string>;
-  whenSelected: () => void;
+  // Used by form to fetch selected value
+  name: string;
+  whenSelected?: () => void;
   className?: any;
   inputRef?: React.Ref<HTMLSelectElement>;
 }
 
 const Dropdown: FC<Props> = ({
+  name = "test",
   options,
   whenSelected,
   className,
