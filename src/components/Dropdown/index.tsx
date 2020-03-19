@@ -13,7 +13,7 @@ interface Props {
 }
 
 const Dropdown: FC<Props> = ({
-  name = "test",
+  name,
   options,
   whenSelected,
   className,
@@ -29,6 +29,7 @@ const Dropdown: FC<Props> = ({
   return (
     <div>
       <select
+        name={name}
         ref={inputRef}
         className={selectClass}
         onChange={whenSelected}
