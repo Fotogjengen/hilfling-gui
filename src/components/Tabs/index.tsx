@@ -17,14 +17,13 @@ interface Props extends DefaultProps {
 
 const Tabs: FC<Props> = ({
   type,
-  activeTab,
+  activeTab = "isfit",
   onClick,
   ...rest
 }: Props) => {
   const [current, setCurrent] = useState<string>(activeTab);
   return (
     <div>
-      {console.log(activeTab)}
       <Tab
         onClick={setCurrent}
         type={"samfundet"}
@@ -32,7 +31,7 @@ const Tabs: FC<Props> = ({
       >
         SAMFUNDET
       </Tab>
-      <Tab onClick={() => setCurrent("uka")} type={"uka"} active={current == "uka"}>
+      <Tab onClick={setCurrent} type={"uka"} active={current == "uka"}>
         UKA
       </Tab>
       <Tab onClick={setCurrent} type={"isfit"} active={current == "isfit"}>

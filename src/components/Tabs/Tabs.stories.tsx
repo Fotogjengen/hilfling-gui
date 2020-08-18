@@ -6,6 +6,7 @@ import Tabs from ".";
 storiesOf("Tabs", module)
   .addDecorator(withInfo({ inline: true }))
   .add("Tab: Samfundet", () => (
-    <Tabs activeTab={"isfit"} onClick={() => false}>
+    <Tabs type={"samfundet"} activeTab={"other"} onClick={() => false}>
+      TABS
     </Tabs>
   ));
