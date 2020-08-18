@@ -36,10 +36,10 @@ const Tab: FC<Props> = ({
     {
       [styles.active]: !active,
     },
-    { [styles.samfundet]: type === "samfundet" },
-    { [styles.uka]: type === "uka" },
-    { [styles.isfit]: type === "isfit" },
-    { [styles.annet]: type === "annet" },
+    { [styles.samfundet]: type == "samfundet" },
+    { [styles.uka]: type == "uka" },
+    { [styles.isfit]: type == "isfit" },
+    { [styles.annet]: type == "annet" },
     className,
   );
   const otherTabStyle =
