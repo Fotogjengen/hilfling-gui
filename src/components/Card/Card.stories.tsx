@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import Card from ".";
+import Card from "./index";
 import CardTitle from "../CardTitle";
 import CardPreamble from "../CardPreamble";
 

@@ -10,6 +10,7 @@ interface Props extends DefaultProps {
   /** True if not able to change component state */
   notChangeable?: boolean;
   label?: string;
+  inputRef?: React.Ref<HTMLDivElement>;
 }
 
 const RadioButton: FC<Props> = ({
@@ -17,6 +18,7 @@ const RadioButton: FC<Props> = ({
   notChangeable,
   className,
   label,
+  inputRef,
   ...rest
 }: Props) => {
   const [checkedRadio, setCheckedRadio] = useState<boolean>(checked);
@@ -29,6 +31,7 @@ const RadioButton: FC<Props> = ({
       <div
         onClick={handleClick}
         className={cx(styles.radiobutton, className)}
+        ref={inputRef}
         {...rest}
       >
         <RadioButtonSvg checked={checkedRadio} />
