@@ -14,7 +14,6 @@ interface Props extends DefaultProps {
 }
 
 const Input: FC<Props> = ({
-  name,
   disabled = false,
   placeholder = "",
   className,

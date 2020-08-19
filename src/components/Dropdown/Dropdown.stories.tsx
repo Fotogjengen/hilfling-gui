@@ -8,5 +8,9 @@ const optionsList: Array<string> = ["option1", "option2", "option3"];
 storiesOf("Dropdown", module)
   .addDecorator(withInfo({ inline: true }))
   .add("Standard", () => (
-    <Dropdown options={optionsList} whenSelected={() => alert("JAJA")} />
+    <Dropdown
+      name="example"
+      options={optionsList}
+      whenSelected={() => alert("JAJA")}
+    />
   ));
