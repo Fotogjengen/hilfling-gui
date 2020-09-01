@@ -3,11 +3,7 @@ import DotDivider, { ColorType } from "../DotDivider";
 import cx from "classnames";
 import styles from "./CardPreamble.module.css";
 import { DefaultProps } from "../../types";
-
-type EventCard = "EventCard";
-type GjengfotoCard = "GjengfotoCard";
-
-type CardType = EventCard | GjengfotoCard;
+import { CardType } from "../../types";
 
 interface Props extends DefaultProps {
   /** Number of images in event album */

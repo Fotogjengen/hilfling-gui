@@ -10,6 +10,7 @@ interface Props extends DefaultProps {
   /** True if not able to change component state */
   notChangeable?: boolean;
   label?: string;
+  inputRef?: React.Ref<HTMLDivElement>;
 }
 
 const Checkbox: FC<Props> = ({
@@ -17,6 +18,7 @@ const Checkbox: FC<Props> = ({
   notChangeable,
   className,
   label,
+  inputRef,
   ...rest
 }: Props) => {
   const [checkedBox, setCheckedBox] = useState<boolean>(checked);
@@ -29,6 +31,7 @@ const Checkbox: FC<Props> = ({
       <div
         onClick={handleClick}
         className={cx(styles.checkbox, className)}
+        ref={inputRef}
         {...rest}
       >
         <CheckboxSvg checked={checkedBox} />

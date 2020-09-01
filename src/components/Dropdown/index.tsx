@@ -7,12 +7,14 @@ interface Props {
   options: Array<string>;
   whenSelected: () => void;
   className?: any;
+  inputRef?: React.Ref<HTMLSelectElement>;
 }
 
 const Dropdown: FC<Props> = ({
   options,
   whenSelected,
   className,
+  inputRef,
   ...rest
 }: Props) => {
   const optionsList = options.map(element => (
@@ -23,7 +25,12 @@ const Dropdown: FC<Props> = ({
   const selectClass = cx(className);
   return (
     <div>
-      <select className={selectClass} onChange={whenSelected} {...rest}>
+      <select
+        ref={inputRef}
+        className={selectClass}
+        onChange={whenSelected}
+        {...rest}
+      >
         {optionsList}
       </select>
       <div className={styles.arrow}></div>

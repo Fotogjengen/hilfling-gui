@@ -20,4 +20,4 @@ export { default as CarouselItems } from "./components/CarouselItem";
 export { default as Carousel } from "./components/Carousel";
 export { default as ChildPageHeader } from "./components/ChildPageHeader";
 export { default as Tab } from "./components/Tab";
-
+export { default as ImageCard } from "./components/ImageCard";
