@@ -1,10 +1,7 @@
 {
   "name": "hilfling-gui",
-<<<<<<< HEAD
   "version": "1.0.26",
-=======
   "version": "1.1.12",
->>>>>>> 36a09a52935617e7d108ad76dbdfad457ff0915a
   "description": "Custom react gui library used for Fotogjengen's webpages",
   "main": "index.js",
   "scripts": {
