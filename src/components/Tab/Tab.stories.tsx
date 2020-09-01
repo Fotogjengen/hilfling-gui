@@ -19,14 +19,6 @@ storiesOf("Tab", module)
       <Tab type={"annet"} onClick={() => false} active={false}>
         ANNET
       </Tab>
-      <Tab
-        btnColor={"red"}
-        btnBorderColor={"blue"}
-        onClick={() => false}
-        active={false}
-      >
-        TEST
-      </Tab>
     </div>
   ))
   .add("UKA active", () => (
@@ -91,13 +83,6 @@ storiesOf("Tab", module)
       <Tab type={"annet"} onClick={() => false} active={false}>
         ANNET
       </Tab>
-      <Tab
-        btnColor={"#aaa"}
-        btnBorderColor={"#000"}
-        onClick={() => false}
-        active={true}
-      >
-        OTHER
-      </Tab>
+
     </div>
   ));
