@@ -14,7 +14,7 @@ interface Props extends DefaultProps, OtherTabProp {
   /** Content inside */
   children?: any;
   /** Primary button styling */
-  type?: EventType;
+  type: EventType;
   /** Called when a button is clicked */
   onClick: (type: string) => void;
   /** Is it active? */
@@ -36,10 +36,10 @@ const Tab: FC<Props> = ({
     {
       [styles.active]: !active,
     },
-    { [styles.samfundet]: type === "samfundet" },
-    { [styles.uka]: type === "uka" },
-    { [styles.isfit]: type === "isfit" },
-    { [styles.annet]: type === "annet" },
+    { [styles.samfundet]: type == "samfundet" },
+    { [styles.uka]: type == "uka" },
+    { [styles.isfit]: type == "isfit" },
+    { [styles.annet]: type == "annet" },
     className,
   );
   const otherTabStyle =
@@ -56,7 +56,7 @@ const Tab: FC<Props> = ({
     <button
       className={tabClass}
       style={otherTabStyle}
-      onClick={onClick}
+      onClick={() => onClick(type)}
       {...rest}
     >
       {children}

@@ -1,6 +1,10 @@
 {
   "name": "hilfling-gui",
+<<<<<<< HEAD
   "version": "1.0.26",
+=======
+  "version": "1.1.12",
+>>>>>>> 36a09a52935617e7d108ad76dbdfad457ff0915a
   "description": "Custom react gui library used for Fotogjengen's webpages",
   "main": "index.js",
   "scripts": {
@@ -11,7 +15,7 @@
     "storybook": "start-storybook -p 9001",
     "lint": "eslint --ext js --ext jsx --ext ts --ext tsx src",
     "lint:fix": "eslint --fix --ext js --ext jsx --ext ts --ext tsx src",
-    "remove-old": "rm -rf ./lib && rm -rf ./grp",
+    "remove-old": "rm dir ./lib && rm dir ./grp",
     "babel": "babel grp -d lib --copy-files && rm -rf ./grp",
     "prepare": "npm run remove-old && npm run tsc && ./copy-css-files.bash && npm run babel"
   },
