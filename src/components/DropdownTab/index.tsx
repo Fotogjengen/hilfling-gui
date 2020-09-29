@@ -2,6 +2,7 @@ import React, { FC, useState } from "react";
 import cx from "classnames";
 import styles from "./DropdownTab.module.css";
 import { DefaultProps } from "../../types";
+import ContentTab from "../ContentTab"
 
 //type ColorType = "green" | "blue" | "purple" | "red" | "yellow";
 
@@ -38,7 +39,7 @@ const DropdownTab: React.FC<Props> = ({
         console.log(Content)
         console.log(toggle)
         
-        const DropdownTabClass = cx(styles.DropdownTab, className, 
+        const DropdownTabClass = cx(styles.DropdownTab, className,  
             {
                 [styles.red]: color == "red",
                 [styles.yellow]: color == "yellow",
@@ -48,6 +49,7 @@ const DropdownTab: React.FC<Props> = ({
             }
         );
 
+        
     return (
         <div>
             <div className={DropdownTabClass} onClick={()=> handleClick()}> 
@@ -56,9 +58,7 @@ const DropdownTab: React.FC<Props> = ({
                     <path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M31.4167 0.083252L18 13.4999L4.58333 0.083252L0.5 4.16659L18 21.6666L35.5 4.16659L31.4167 0.083252Z" fill="black"/>
                 np</svg>
             </div>
-            <div className="hideContent">
-                tekst
-            </div>
+            <ContentTab contentTabClass={Content} />
         </div>
     );
 };

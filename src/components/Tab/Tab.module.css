@@ -8,11 +8,13 @@
   font-size: 1.4rem;
   border-radius: 5px 5px 0px 0px;
   text-transform: capitalize;
+  border: none;
 }
 
 .tab:focus {
   outline: none;
 }
+
 
 .tab:active {
   box-shadow: none;
