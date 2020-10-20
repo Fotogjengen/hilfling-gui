@@ -1,0 +1,13 @@
+.showContent {
+    display: block;
+}
+.hideContent {
+    display: none;
+}
+.ThreeDotsMenu svg{
+    height:30px;
+}
+.ThreeDotsMenu :hover{
+    background-color: #E7E6E6;
+    border-radius: 3px;
+}
