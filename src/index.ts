@@ -22,4 +22,4 @@ export { default as ChildPageHeader } from "./components/ChildPageHeader";
 export { default as Tab } from "./components/Tab";
 export { default as Tabs } from "./components/Tabs";
 export { default as ImageCard } from "./components/ImageCard";
-
+export { default as ImageLogo } from "./components/ImageLogo";
