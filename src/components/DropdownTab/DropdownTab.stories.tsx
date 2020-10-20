@@ -6,16 +6,6 @@ import "./DropdownTab.module.css"
 
 storiesOf("DropdownTab", module)
     .addDecorator(withInfo({ inline: true }))
-    .add("DropdownTab: Alle lukket", ()=> (
-        
-        <div>
-            <DropdownTab color="red" name="Album"  />  
-            <DropdownTab color="blue" name="Kategori" />
-            <DropdownTab color="purple" name="Sted" />
-            <DropdownTab color="green" name="Medium"  />
-            <DropdownTab color="yellow" name="Statistikk" />
-        </div>
-    ))
 
     .add("DropdownTab: Album pen?", ()=> (
         <div>

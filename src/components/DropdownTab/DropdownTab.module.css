@@ -1,19 +1,19 @@
-@import "../../styles/globals.css";
-@import "../../styles/variables.css";
+
 
 .DropdownTab {
-    height: 60px;
+    height: 4.4rem;
     width: 95%;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
-    padding: 20px; 
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    /* font-family: "Raleway", Arial, Helvetica, sans-serif; */
+    padding: 1.25rem; 
+    /* box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); */
+    font-size: 1.7rem;
+    margin-top: 0.9rem;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 0fr;
+    line-height: 1.9rem;
+    background-color: #C4C4C4;
 }
 .showContent {
     display: block;
@@ -21,26 +21,26 @@
 .hideContent {
     display: none;
 }
-.red{
+.red:hover{
     background-color: #DA7777;
-    border-bottom: 30px solid #DA7777;
 }
-.yellow{
+.yellow:hover{
     background-color: #F3EE78;
-    border-bottom: 30px solid #F3EE78;
 }
-.blue{
+.blue:hover{
     background-color: #7793DA;
-    border-bottom: 30px solid #7793DA;
 }
-.green{
+.green:hover{
     background-color: #BADA77;
-    border-bottom: 30px solid #BADA77;
 }
-.purple{
+.purple:hover{
     background-color: #9C77DA;
-    border-bottom: 30px solid #9C77DA;
 }
-
+.column {
+    width: 32%;
+    margin: 0.5rem;
+    /* flex: 1 0 33%;
+    flex-flow: column wrap; */
+}
 
 
