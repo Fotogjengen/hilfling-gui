@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 interface Props {
-  size: number;
+  size?: number;
 }
 
 const GarbageCan: FC<Props> = ({size}) => {
