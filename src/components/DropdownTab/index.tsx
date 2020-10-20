@@ -7,6 +7,7 @@ import DropDownArrow from "../icons/DropDownArrow";
 import OverflowMenuIcon from "../icons/OverflowMenuIcon";
 import OverflowItem from "../Overflow/OverflowItem"
 import OverflowMenuItem from "../Overflow/OverflowItem"
+import ThreeDotsMenu from "../ThreeDotsMenu";
 
 //type ColorType = "green" | "blue" | "purple" | "red" | "yellow";
 
@@ -62,8 +63,9 @@ const DropdownTab: React.FC<Props> = ({
                 <DropDownArrow clicked={clickedArrow}/>
             </div>
             <ContentTab contentTabClass={Content} name={name}>
-                {mock.map(name => <div className={styles.column} key={name}> {name} 
-            </div>)}
+                {mock.map(name => <div className={styles.column} key={name}> 
+                    <ThreeDotsMenu/>{name} 
+                </div>)}
             </ContentTab>
         </div>
     );

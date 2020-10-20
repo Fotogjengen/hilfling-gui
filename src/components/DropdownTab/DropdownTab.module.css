@@ -37,6 +37,7 @@
     background-color: #9C77DA;
 }
 .column {
+    display: flex;
     width: 32%;
     margin: 0.5rem;
     /* flex: 1 0 33%;
