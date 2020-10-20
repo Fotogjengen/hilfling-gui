@@ -62,8 +62,8 @@ const DropdownTab: React.FC<Props> = ({
                 <DropDownArrow clicked={clickedArrow}/>
             </div>
             <ContentTab contentTabClass={Content} name={name}>
-                    {mock.map(name => <div className={styles.column} key={name}> {name} 
-                    </div>)}
+                {mock.map(name => <div className={styles.column} key={name}> {name} 
+            </div>)}
             </ContentTab>
         </div>
     );

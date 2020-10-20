@@ -12,9 +12,12 @@ interface Props extends DefaultProps {
     children?: any; 
 } 
 
-const ContentTab: React.FC<Props> = ({ contentTabClass, name, children }: Props) => {
-
-
+const ContentTab: React.FC<Props> = ({ 
+    contentTabClass, 
+    name, 
+    children 
+}: Props) => {
+    
     const ContentTabClass = cx(styles.ContentTab,  
         {
             [styles.column]: contentTabClass == "column",
