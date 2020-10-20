@@ -3,6 +3,10 @@ import cx from "classnames";
 import styles from "./DropdownTab.module.css";
 import { DefaultProps } from "../../types";
 import ContentTab from "../ContentTab"
+import DropDownArrow from "../icons/DropDownArrow";
+import OverflowMenuIcon from "../icons/OverflowMenuIcon";
+import OverflowItem from "../Overflow/OverflowItem"
+import OverflowMenuItem from "../Overflow/OverflowItem"
 
 //type ColorType = "green" | "blue" | "purple" | "red" | "yellow";
 
@@ -11,7 +15,6 @@ interface Props extends DefaultProps {
     name: string;
     //hva skal dukke opp dersom man trykker på
     child?: any; 
-    //dersom den er aktiv?? 
 } 
 
 //må vel få laget en funksjon som kan brukes til å endre isOpen til true dersom den blir trykket på 
@@ -22,6 +25,8 @@ const DropdownTab: React.FC<Props> = ({
         className
     }: Props) => {
         const [toggle, setToggle] = useState(false);
+        const [clickedArrow, setClickedArrow] = useState(false);
+        const mock = ['hei1','hei2', 'hei3','hei4', 'hei5','hei6', 'hei7','hei8', 'hei9','hei10', 'hei11','hei', 'hei','hei', 'hei','hei', 'hei','hei', 'hei','hei', 'hei','hei', 'hei']
         
         let Content = "";
 
@@ -34,10 +39,10 @@ const DropdownTab: React.FC<Props> = ({
 
         function handleClick() {
             setToggle(!toggle)
+            setClickedArrow(clickedArrow)
+            
         }
-        
-        console.log(Content)
-        console.log(toggle)
+    
         
         const DropdownTabClass = cx(styles.DropdownTab, className,  
             {
@@ -53,12 +58,13 @@ const DropdownTab: React.FC<Props> = ({
     return (
         <div>
             <div className={DropdownTabClass} onClick={()=> handleClick()}> 
-                <div>{name}</div>
-                <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M31.4167 0.083252L18 13.4999L4.58333 0.083252L0.5 4.16659L18 21.6666L35.5 4.16659L31.4167 0.083252Z" fill="black"/>
-                np</svg>
+                {name}
+                <DropDownArrow clicked={clickedArrow}/>
             </div>
-            <ContentTab contentTabClass={Content} />
+            <ContentTab contentTabClass={Content} name={name}>
+                    {mock.map(name => <div className={styles.column} key={name}> {name} 
+                    </div>)}
+            </ContentTab>
         </div>
     );
 };
