@@ -6,6 +6,7 @@
     -moz-box-shadow: 0px 4px 24px 4px rgba(0,0,0,0.24);
     box-shadow: 0px 4px 24px 4px rgba(0,0,0,0.24);
     justify-content: space-evenly;
+    position: absolute;
 }
 .hide{
     display: none;
