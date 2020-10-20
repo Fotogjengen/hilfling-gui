@@ -2,6 +2,8 @@
     border-bottom: 2px solid #D3C9C9;
     padding: 10px;
     display: flex;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .OverflowMenuItem:hover{
