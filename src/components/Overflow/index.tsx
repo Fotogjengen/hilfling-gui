@@ -5,16 +5,24 @@ import { DefaultProps } from "../../types";
 
 
 interface Props extends DefaultProps {
-    children: any;
+    children?: any;
+    overflowTabClass: string;
 } 
 
 const OverflowMenu: React.FC<Props> = ({
+    overflowTabClass,
     children,
     className
 }: Props) => {
+    const OverflowTabClass = cx(styles.OverflowTab,  
+        {
+            [styles.hide]: overflowTabClass == "hideContent",
+            [styles.OverflowTab]: overflowTabClass == "showContent"
+        }
+    );
 
     return (
-        <div className={styles.OverflowMenu}> 
+        <div className={OverflowTabClass}> 
             {children}
         </div>
     );
