@@ -5,9 +5,9 @@
     display: none;
 }
 .ThreeDotsMenu svg{
-    height:30px;
+    height:1.9rem;
 }
 .ThreeDotsMenu :hover{
     background-color: #E7E6E6;
-    border-radius: 3px;
+    border-radius: 0.2px;
 }

@@ -1,9 +1,9 @@
 .OverflowMenuItem{
-    border-bottom: 2px solid #D3C9C9;
-    padding: 10px;
+    border-bottom: 0.13rem solid #D3C9C9;
+    padding: 0.63rem;
     display: flex;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 0.31rem;
 }
 
 .OverflowMenuItem:hover{
