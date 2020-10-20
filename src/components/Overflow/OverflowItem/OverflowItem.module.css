@@ -1,0 +1,9 @@
+.OverflowMenuItem{
+    border-bottom: 2px solid #D3C9C9;
+    padding: 10px;
+    display: flex;
+}
+
+.OverflowMenuItem:hover{
+    background-color: #DCDCDC;
+}
