@@ -24,15 +24,14 @@ const ThreeDotsMenu: React.FC<Props> = ({
     items,
     children
 }: Props) => {
+
         const [toggle, setToggle] = useState(false);
         let Content = "";
 
-        const mock: [ThreeDotsItem] = [ {
+        const mock: [ThreeDotsItem] = [{
             icon: Pencil,
             title: "Rediger"
-        }
-
-        ]
+        }]
 
         if (toggle) {
             Content = "showContent"
@@ -46,12 +45,15 @@ const ThreeDotsMenu: React.FC<Props> = ({
         }
     return (
         <div>
-            <div className={styles.ThreeDotsMenu} onClick={()=> handleClick()}> 
+            <div className={styles.ThreeDotsMenu} onClick={()=> {handleClick()}}> 
                 <ThreeDots size={20}/>
             </div>
-            <OverflowMenu overflowTabClass={Content}>
-                {mock.map(item => <OverflowMenuItem text={item.title} icon={item.icon}/>)}
-            </OverflowMenu>
+            <div>
+                <OverflowMenu overflowTabClass={Content} >
+                    {mock.map(item => <OverflowMenuItem text={item.title} icon={item.icon}/>)}
+                </OverflowMenu>
+            </div>
+            
         </div>
     );
 };
