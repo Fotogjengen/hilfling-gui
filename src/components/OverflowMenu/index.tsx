@@ -1,9 +1,9 @@
 import React, { FC, useState, useRef, useEffect} from "react";
 import cx from "classnames";
-import styles from "./ThreeDotsMenu.module.css";
+import styles from "./OverflowMenu.module.css";
 import { DefaultProps } from "../../types";
 import ThreeDots from "../icons/ThreeDots"
-import OverflowMenu from "./Overflow"
+import OverflowMenu2 from "./Overflow"
 import OverflowMenuItem from "./Overflow/OverflowItem"
 import Pencil from "../icons/Pencil"
 import GarbageCan from "../icons/GarbageCan"
@@ -21,7 +21,7 @@ interface Props extends DefaultProps {
     items?: [ThreeDotsItem]
 } 
 
-const ThreeDotsMenu: React.FC<Props> = ({
+const OverflowMenu: React.FC<Props> = ({
     className, 
     items,
     children
@@ -34,14 +34,14 @@ const ThreeDotsMenu: React.FC<Props> = ({
         }]
     return (
             <div ref={ref}>
-                <div className={styles.ThreeDotsMenu} onClick={() => setIsVisible(!isVisible)}>
+                <div className={styles.OverflowMenu} onClick={() => setIsVisible(!isVisible)}>
                     <ThreeDots size={20}/>
                 </div>
                  <div >
                  {isVisible &&
-                    <OverflowMenu overflowTabClass={Content} >
+                    <OverflowMenu2 overflowTabClass={Content} >
                         {mock.map(item => <OverflowMenuItem text={item.title} icon={item.icon}/>)}
-                    </OverflowMenu>
+                    </OverflowMenu2>
                     }
 
                 </div>
@@ -49,7 +49,7 @@ const ThreeDotsMenu: React.FC<Props> = ({
     );
 };
 
-export default ThreeDotsMenu;
+export default OverflowMenu;
 
 
 

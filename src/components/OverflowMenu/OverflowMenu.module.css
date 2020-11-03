@@ -4,10 +4,10 @@
 .hideContent {
     display: none;
 }
-.ThreeDotsMenu svg{
+.OverflowMenu svg{
     height:1.9rem;
 }
-.ThreeDotsMenu :hover{
+.OverflowMenu :hover{
     background-color: #E7E6E6;
     border-radius: 0.2px;
 }

@@ -1,16 +1,16 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import ThreeDotsMenu from "."
+import OverflowMenu from "."
 
-storiesOf("ThreeDotsMenu", module)
+storiesOf("OverflowMenu", module)
     .addDecorator(withInfo({ inline: true }))
 
-    .add("ThreeDotsMenu", ()=> (
+    .add("OverflowMenu", ()=> (
         <div>
-            <ThreeDotsMenu>
+            <OverflowMenu>
                 
-            </ThreeDotsMenu>
+            </OverflowMenu>
         </div>
         
     ));

@@ -9,7 +9,7 @@ interface Props extends DefaultProps {
     overflowTabClass: string;
 } 
 
-const OverflowMenu: React.FC<Props> = ({
+const OverflowMenu2: React.FC<Props> = ({
     overflowTabClass,
     children,
     className
@@ -28,4 +28,4 @@ const OverflowMenu: React.FC<Props> = ({
 };
 
 
-export default OverflowMenu; 
+export default OverflowMenu2; 

@@ -21,3 +21,7 @@ export { default as Carousel } from "./components/Carousel";
 export { default as ChildPageHeader } from "./components/ChildPageHeader";
 export { default as Tab } from "./components/Tab";
 export { default as ImageCard } from "./components/ImageCard";
+export { default as DropdownTab } from "./components/DropdownTab";
+export { default as OverflowMenu } from "./components/OverflowMenu";
+export { default as Overflow } from "./components/OverflowMenu/Overflow";
+
