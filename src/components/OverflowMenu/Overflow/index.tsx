@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import cx from "classnames";
 import styles from "./Overflow.module.css";
-import { DefaultProps } from "../../types";
+import { DefaultProps } from "../../../types";
 
 
 interface Props extends DefaultProps {

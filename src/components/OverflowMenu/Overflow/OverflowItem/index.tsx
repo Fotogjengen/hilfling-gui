@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import cx from "classnames";
-import { DefaultProps } from "../../../types";
-import OverflowMenuIcon from "../../icons/OverflowMenuIcon"; 
+import { DefaultProps } from "../../../../types";
+import OverflowMenuIcon from "../../../icons/OverflowMenuIcon"; 
 import styles from "./OverflowItem.module.css";
 
 interface Props extends DefaultProps {

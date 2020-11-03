@@ -3,8 +3,8 @@ import cx from "classnames";
 import styles from "./ThreeDotsMenu.module.css";
 import { DefaultProps } from "../../types";
 import ThreeDots from "../icons/ThreeDots"
-import OverflowMenu from "../Overflow"
-import OverflowMenuItem from "../Overflow/OverflowItem"
+import OverflowMenu from "./Overflow"
+import OverflowMenuItem from "./Overflow/OverflowItem"
 import Pencil from "../icons/Pencil"
 import GarbageCan from "../icons/GarbageCan"
 import useVisible from "./useVisible"

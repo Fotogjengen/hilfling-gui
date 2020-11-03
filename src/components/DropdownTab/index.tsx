@@ -5,9 +5,9 @@ import { DefaultProps } from "../../types";
 import ContentTab from "../ContentTab"
 import DropDownArrow from "../icons/DropDownArrow";
 import OverflowMenuIcon from "../icons/OverflowMenuIcon";
-import OverflowItem from "../Overflow/OverflowItem"
-import OverflowMenuItem from "../Overflow/OverflowItem"
-import ThreeDotsMenu from "../ThreeDotsMenu";
+import OverflowItem from "../OverflowMenu/Overflow/OverflowItem"
+import OverflowMenuItem from "../OverflowMenu/Overflow/OverflowItem"
+import ThreeDotsMenu from "../OverflowMenu";
 
 //type ColorType = "green" | "blue" | "purple" | "red" | "yellow";
 
