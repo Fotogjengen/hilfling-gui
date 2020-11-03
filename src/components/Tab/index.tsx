@@ -21,6 +21,7 @@ interface Props extends DefaultProps, OtherTabProp {
   active: boolean;
 }
 
+
 const Tab: FC<Props> = ({
   children,
   type,
