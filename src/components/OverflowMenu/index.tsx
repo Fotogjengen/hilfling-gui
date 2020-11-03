@@ -3,8 +3,8 @@ import cx from "classnames";
 import styles from "./OverflowMenu.module.css";
 import { DefaultProps } from "../../types";
 import ThreeDots from "../icons/ThreeDots"
-import OverflowMenu2 from "./OverflowTab"
-import OverflowMenuItem from "./OverflowTab/OverflowItem"
+import OverflowMenu2 from "./Overflow"
+import OverflowMenuItem from "./Overflow/OverflowItem"
 import Pencil from "../icons/Pencil"
 import GarbageCan from "../icons/GarbageCan"
 import useVisible from "./useVisible"
@@ -19,10 +19,10 @@ interface ThreeDotsItem {
 interface Props extends DefaultProps {
     children?: any;
     items?: [ThreeDotsItem]
-}
+} 
 
 const OverflowMenu: React.FC<Props> = ({
-    className,
+    className, 
     items,
     children
 }: Props) => {
