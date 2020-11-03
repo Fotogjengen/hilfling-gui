@@ -22,11 +22,6 @@ export { default as ChildPageHeader } from "./components/ChildPageHeader";
 export { default as Tab } from "./components/Tab";
 export { default as Tabs } from "./components/Tabs";
 export { default as ImageCard } from "./components/ImageCard";
-<<<<<<< HEAD
 export { default as DropdownTab } from "./components/DropdownTab";
 export { default as OverflowMenu } from "./components/OverflowMenu";
-export { default as Overflow } from "./components/OverflowMenu/Overflow";
-
-=======
-export { default as ImageLogo } from "./components/ImageLogo";
->>>>>>> 4904ea5fcd73c866ea0e20855c555fe570646b47
+export { default as Overflow } from "./components/OverflowMenu/OverflowTab";
