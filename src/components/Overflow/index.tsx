@@ -16,7 +16,6 @@ const OverflowMenu: React.FC<Props> = ({
 }: Props) => {
     const OverflowTabClass = cx(styles.OverflowTab,  
         {
-            [styles.hide]: overflowTabClass == "hideContent",
             [styles.OverflowMenu]: overflowTabClass == "showContent"
         }
     );
