@@ -261,3 +261,4 @@ grp/
 
 # Vscode config
 .vscode
+dist/

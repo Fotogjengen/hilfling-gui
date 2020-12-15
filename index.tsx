@@ -12,8 +12,8 @@ const App: React.FC<{}> = () => {
       </p>
       <ol>
         <li>Last ned prosjektet fra denne linken: </li>
-        <li>> npm install</li>
-        <li>> npm run storybook</li>
+        <li> npm install</li>
+        <li> npm run storybook</li>
       </ol>
       <p>
         Det var det og værre var det ikke! Om litt havner også dette bibeloteket
