@@ -6,7 +6,8 @@ function useVisible(initialIsVisible) {
 
   const handleClickOutside = (event) => {
     // TODO: Fix typescript error
-    if (ref.current && ! ref.current.contains(event.target)) {
+    const currentObject = ref.current
+    if (currentObject?.contains(event.target)) {
       setIsVisible(false);
     }
   };
