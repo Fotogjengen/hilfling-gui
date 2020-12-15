@@ -7,7 +7,30 @@ import OverflowMenu2 from "./OverflowTab"
 import OverflowMenuItem from "./OverflowTab/OverflowItem"
 import Pencil from "../icons/Pencil"
 import GarbageCan from "../icons/GarbageCan"
-import useVisible from "./useVisible"
+
+
+function useVisible(initialIsVisible) {
+  const [isVisible, setIsVisible] = useState(initialIsVisible);
+  const ref = useRef(null);
+
+  const handleClickOutside = (event) => {
+    // TODO: Fix typescript error
+    /*
+    if (ref.current?.contains(event.target)) {
+      setIsVisible(false);
+    }
+    */
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside, true);
+    return () => {
+      document.removeEventListener('click', handleClickOutside, true);
+    };
+  }, []);
+
+  return { ref, isVisible, setIsVisible };
+}
 
 
 interface ThreeDotsItem {
