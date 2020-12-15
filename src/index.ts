@@ -25,4 +25,3 @@ export { default as ImageCard } from "./components/ImageCard";
 export { default as DropdownTab } from "./components/DropdownTab";
 export { default as OverflowMenu } from "./components/OverflowMenu";
 export { default as Overflow } from "./components/OverflowMenu/OverflowTab";
-export { default as useVisible } from "./components/OverflowMenu/useVisible";
