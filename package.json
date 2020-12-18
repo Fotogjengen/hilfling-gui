@@ -58,7 +58,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.6.0",
     "@storybook/addon-info": "^5.2.1",
-    "@storybook/react": "^5.2.1",
+    "@storybook/react": "^6.1.11",
     "@types/react-hamburger-menu": "0.0.3",
     "@typescript-eslint/eslint-plugin": "^2.3.3",
     "@typescript-eslint/parser": "^2.3.3",
