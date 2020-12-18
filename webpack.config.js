@@ -37,6 +37,10 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js", "jsx"],
   },
+  externals: {
+    // Use external version of react
+    react: "react"
+  },
   plugins: [new HtmlWebpackPlugin({ template: "./index.html" })],
   output: {
     filename: "main.js",
